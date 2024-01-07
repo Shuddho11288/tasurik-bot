@@ -1,5 +1,5 @@
 const database = require('./database')
-const checkAdmin = require('../basicTools/checkAdmin')
+const checkAdmin = require('./basicTools/checkAdmin')
 
 const blacklist = (api, event)=>{
   const target = Object.keys(event.mentions)[0]

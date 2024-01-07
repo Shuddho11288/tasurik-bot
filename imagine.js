@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-const sendImage = require("../basicTools/sendImage");
+const sendImage = require("./basicTools/sendImage");
 
 const { Hercai } = require("hercai");
 

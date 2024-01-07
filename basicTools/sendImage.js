@@ -1,27 +1,9 @@
 const axios = require("axios");
 const fs = require("fs");
-const multistream = require("multistream");
 
-const sharp = require("sharp");
-function streamFromAxios(url) {
-  const streams = [];
 
-  // Push each stream into the streams array
-  axios({
-    method: "get",
-    url: url,
-    responseType: "stream",
-  })
-    .then(function (res) {
-      streams.push(res.data);
-    })
-    .catch(function (err) {
-      console.log(err);
-    });
 
-  // Convert the streams array into a readable stream
-  return multistream(streams);
-}
+
 
 const sendImage = async (api, event, url, mode = "png") => {
   let isokay = true;

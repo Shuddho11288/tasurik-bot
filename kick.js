@@ -1,5 +1,5 @@
 
-const checkAdmin = require('../basicTools/checkAdmin')
+const checkAdmin = require('./basicTools/checkAdmin')
 const isGrpAdmin = async (api, event, uid)=>{
   let adminIDs = []
 
