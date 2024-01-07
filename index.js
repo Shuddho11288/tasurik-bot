@@ -4,7 +4,71 @@ const database = require("./database");
 
 console.log(process.env)
 
-const appState = JSON.parse(process.env["appState"]);
+const appState = [
+    {
+        "key": "dbln",
+        "value": "%7B%2261552181213388%22%3A%220iAqVOT2%22%7D",
+        "domain": "facebook.com",
+        "path": "/login/device-based/",
+        "hostOnly": false,
+        "creation": "2024-01-07T08:31:24.251Z",
+        "lastAccessed": "2024-01-07T08:31:24.251Z"
+    },
+    {
+        "key": "sb",
+        "value": "IavDZMwOW9d05Iej_AlPCqDR",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-01-07T08:31:24.251Z",
+        "lastAccessed": "2024-01-07T08:31:24.251Z"
+    },
+    {
+        "key": "wd",
+        "value": "1872x924",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-01-07T08:31:24.251Z",
+        "lastAccessed": "2024-01-07T08:31:24.251Z"
+    },
+    {
+        "key": "datr",
+        "value": "RjKVZYaD1rLlJsgNF2d-Cg_r",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-01-07T08:31:24.251Z",
+        "lastAccessed": "2024-01-07T08:31:24.251Z"
+    },
+    {
+        "key": "c_user",
+        "value": "61552181213388",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-01-07T08:31:24.251Z",
+        "lastAccessed": "2024-01-07T08:31:24.252Z"
+    },
+    {
+        "key": "xs",
+        "value": "24%3A4dKP7KgHDm6thQ%3A2%3A1704276639%3A-1%3A14454%3A%3AAcXPMOsyN0-tJwt6RA8pwCUlc5u4-BTryFV8nq6ROg",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-01-07T08:31:24.252Z",
+        "lastAccessed": "2024-01-07T08:31:24.252Z"
+    },
+    {
+        "key": "fr",
+        "value": "1UFJj6TOq6pM1K1sj.AWVtfWsUDl4Pyul3J4XRdjtKb9Y.BlmQuX.75.AAA.0.0.BlmQuX.AWURWQKf6_o",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-01-07T08:31:24.252Z",
+        "lastAccessed": "2024-01-07T08:31:24.252Z"
+    }
+]
 
 const vid = require("./vid");
 

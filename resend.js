@@ -1,7 +1,7 @@
 const database = require("./database.js");
 const axios = require("axios");
 const fs = require("fs");
-const sendImage = require("../basicTools/sendImage");
+const sendImage = require("./basicTools/sendImage");
 const isResendON = (threadID) => {
   let dbase = database.getDatabase("resend");
 
