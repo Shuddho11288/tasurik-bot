@@ -2,6 +2,8 @@ const database = require('./database')
 
 const nsfw = require('./nsfw')
 
+
+
 const tasurik = async (api, event)=>{
 
   if (nsfw.checkNSFW(api, event)){
