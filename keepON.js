@@ -55,6 +55,12 @@ const keepON = () => {
         </html>`);
 
   });
+  
+  app.get("/cron", (req, res) => {
+  // the code you want to run
+
+  res.sendStatus(200) // sends an "OK" response
+})
 
   app.listen(port, () => {
     console.log(`Server running on port ${port}`);

@@ -670,7 +670,11 @@ const restartApp = () => {
 
 // Start the application
 startApp();
-
+var cron = require('node-cron');
+cron.schedule('* * * * *', () => {
+  console.log('running a task at the start of every hour');
+  //function logic goes here
+});
 // Global error event handler
 process.on("uncaughtException", (error) => {
   handleErrors(error);
