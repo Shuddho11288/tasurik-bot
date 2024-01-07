@@ -1,5 +1,5 @@
 const apiURL = 'https://memegeneratorapi.tasawarshuddho.repl.co/zuck?t=top'// This api was made by me !
-const sendImage = require('../basicTools/sendImage')
+const sendImage = require('./basicTools/sendImage')
 const zuck = async (api, event) => {
 
   api.sendMessage(

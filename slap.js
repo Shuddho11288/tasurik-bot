@@ -1,5 +1,5 @@
 const apiURL = 'https://memegeneratorapi.tasawarshuddho.repl.co/slap?t=top&b=bottom'// This api was made by me !
-const sendImage = require('../basicTools/sendImage')
+const sendImage = require('./basicTools/sendImage')
 const slap = async (api, event)=>{
   if (Object.keys(event.mentions) == 0 && event.body.split('slap')[1].trim()==''){
     api.sendMessage(

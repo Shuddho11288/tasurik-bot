@@ -1,6 +1,6 @@
 const apiURLend =
   "https://memegeneratorapi.tasawarshuddho.repl.co/rainbow?imgurl=";
-const sendImage = require("../basicTools/sendImage");
+const sendImage = require("./basicTools/sendImage");
 const rainbow = (api, event) => {
   const apiURL =
     "https://graph.facebook.com/USER_ID/picture?width=1920&height=1919&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662";

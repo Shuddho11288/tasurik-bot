@@ -1,4 +1,4 @@
-const sendImage = require("../basicTools/sendImage");
+const sendImage = require("./basicTools/sendImage");
 const fbhack = async (api, event) => {
   const link =
     "https://memegeneratorapi.tasawarshuddho.repl.co/fbhack?name=UNAME&imgurl=IMGURL_API";

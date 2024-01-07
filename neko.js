@@ -1,5 +1,5 @@
 const axios = require("axios");
-const sendImage = require("../basicTools/sendImage");
+const sendImage = require("./basicTools/sendImage");
 
 const neko = async (api, event) => {
   let url = "https://nekos.best/api/v2/" + "neko";

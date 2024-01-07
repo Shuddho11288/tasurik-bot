@@ -1,7 +1,7 @@
 const apiforname = 'https://pypokedexbyshuddho.tasawarshuddho.repl.co/api/pokemon/name/'
 const apifordex = 'https://pypokedexbyshuddho.tasawarshuddho.repl.co/api/pokemon/dex/'
 
-const sendImage = require('../basicTools/sendImage')
+const sendImage = require('./basicTools/sendImage')
 
 const axios = require('axios')
 const boldify = require('./boldify')

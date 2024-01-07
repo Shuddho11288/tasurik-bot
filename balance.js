@@ -1,6 +1,6 @@
 const database = require("./database");
 let lastDailyTaken = database.getDatabase("lastDailyTaken");
-const checkAdmin = require("../basicTools/checkAdmin");
+const checkAdmin = require("./basicTools/checkAdmin");
 const boldify = require("./boldify");
 let lastWorkInvoked = {};
 

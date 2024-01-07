@@ -1,5 +1,5 @@
 const axios = require('axios')
-const sendImage = require('../basicTools/sendImage')
+const sendImage = require('./basicTools/sendImage')
 
 const webss = (api, event)=>{
   const baseURL = 'https://image.thum.io/get/width/1920/crop/400/fullpage/noanimate/'

@@ -1,6 +1,6 @@
 const database = require('./database')
 const tasurik = require('./tasurik')
-const checkAdmin = require('../basicTools/checkAdmin')
+const checkAdmin = require('./basicTools/checkAdmin')
 
 const isSimOn = (event)=>{
   let dbase = database.getDatabase('sim')

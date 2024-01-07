@@ -1,6 +1,6 @@
 const mySecret = process.env["4k"];
 const axios = require("axios");
-const sendImage = require("../basicTools/sendImage");
+const sendImage = require("./basicTools/sendImage");
 const remini = async (api, event) => {
   api.sendMessage(
     "✅ Processing Image... Please Wait for a minute.",

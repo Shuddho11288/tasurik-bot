@@ -1,4 +1,4 @@
-const sendImage = require("../basicTools/sendImage");
+const sendImage = require("./basicTools/sendImage");
 const tweet = async (api, event) => {
   const link =
     "https://memegeneratorapi.tasawarshuddho.repl.co/tweet?t=TEXT&name=UNAME&img=IMG&vanity=VANITY";

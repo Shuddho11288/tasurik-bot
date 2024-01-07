@@ -1,6 +1,6 @@
 const DIG = require("discord-image-generation");
 const axios = require("axios");
-const sendImage = require("../basicTools/sendImage");
+const sendImage = require("./basicTools/sendImage");
 
 async function unshortenUrl(shortUrl) {
   try {
