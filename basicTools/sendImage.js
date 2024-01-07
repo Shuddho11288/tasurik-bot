@@ -1,11 +1,5 @@
 const axios = require("axios");
 const fs = require("fs");
-try{
-const sharp = require('sharp')
-}
-catch (e){
-  
-}
 
 
 
@@ -112,33 +106,35 @@ const sendImageWithMessage = async (api, event, msg, url) => {
     );
   }
 };
+const { promisify } = require('util');
+const readFileAsync = promisify(fs.readFile);
+const writeFileAsync = promisify(fs.writeFile);
 
 const sendImageBuffer = async (api, event, img) => {
-  const buffer = Buffer.from(img, "base64");
+  try {
+    const buffer = Buffer.from(img, 'base64');
 
-  const outputPath =
-    __dirname + `/cache/${event.senderID}${process.hrtime.bigint()}.gif`;
+    const outputPath =
+      __dirname + `/cache/${event.senderID}${process.hrtime.bigint()}.gif`;
 
-  sharp(buffer, { animated: true }).toFile(outputPath, async (err, info) => {
-    if (err) {
-      console.error(err);
-    } else {
-      response = fs.createReadStream(outputPath);
-      await api.sendMessage(
-        {
-          attachment: response,
-        },
-        event.threadID,
-        () => {
-          console.log("ok");
-          fs.unlinkSync(outputPath);
-        },
-        event.messageID,
-      );
-    }
-  });
+    await writeFileAsync(outputPath, buffer);
+
+    const response = fs.createReadStream(outputPath);
+    await api.sendMessage(
+      {
+        attachment: response,
+      },
+      event.threadID,
+      () => {
+        console.log('ok');
+        fs.unlinkSync(outputPath);
+      },
+      event.messageID,
+    );
+  } catch (err) {
+    console.error(err);
+  }
 };
-
 const sendBulkImage = async (api, event, imgurllist) => {
   let isokay = true;
   let streamList = [];
