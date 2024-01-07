@@ -110,13 +110,16 @@ const { promisify } = require('util');
 const readFileAsync = promisify(fs.readFile);
 const writeFileAsync = promisify(fs.writeFile);
 
-const sendImageBuffer = async (api, event, img) => {
+const sendImageBuffer = async (api, event, img, ext='.gif') => {
   try {
     const buffer = Buffer.from(img, 'base64');
 
-    const outputPath =
+    let outputPath =
       __dirname + `/cache/${event.senderID}${process.hrtime.bigint()}.gif`;
 
+    if (ext!='.gif'){
+      outputPath = __dirname + `/cache/${event.senderID}${process.hrtime.bigint()}.png`;
+    }
     await writeFileAsync(outputPath, buffer);
 
     const response = fs.createReadStream(outputPath);

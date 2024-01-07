@@ -20,7 +20,7 @@ const trash = async (api, event) => {
   url = await unshortenUrl(url);
   let img = await new DIG.Trash().getImage(url);
   console.log(img);
-  sendImage.sendImageBuffer(api, event, img);
+  sendImage.sendImageBuffer(api, event, img, '.png');
 };
 
 module.exports = {

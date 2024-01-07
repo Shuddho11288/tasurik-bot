@@ -20,6 +20,6 @@ const deletepic = async (api, event) => {
   url = await unshortenUrl(url);
   let img = await new DIG.Delete().getImage(url);
   console.log(img);
-  sendImage.sendImageBuffer(api, event, img);
+  sendImage.sendImageBuffer(api, event, img, '.png');
 };
 module.exports = { deletepic };
