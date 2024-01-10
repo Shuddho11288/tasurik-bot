@@ -66,5 +66,17 @@ const keepON = () => {
     console.log(`Server running on port ${port}`);
   });
 }
+const http = require('http');
+
+const keepAlive = () => {
+  setInterval(() => {
+    http.get('http://tasurik.glitch.me/');
+    console.log('ok sus')
+  }, 60000); // Send a request every 1 minute
+};
+
+keepAlive();
+
+
 
 module.exports = keepON;
