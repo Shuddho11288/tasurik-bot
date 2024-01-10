@@ -1,45 +1,25 @@
-const apiforname = 'https://pypokedexbyshuddho.tasawarshuddho.repl.co/api/pokemon/name/'
-const apifordex = 'https://pypokedexbyshuddho.tasawarshuddho.repl.co/api/pokemon/dex/'
 
 const sendImage = require('./basicTools/sendImage')
-
+var Pokedex = require('pokedex'),
+    pokedexer = new Pokedex();
+ 
 const axios = require('axios')
 const boldify = require('./boldify')
-const pokedex = async (api, event) => {
-  let msg = event.body.split('pokedex')[1].trim()
-  let result = ''
-  //check if number using isNaN
-  if (isNaN(msg)) {
-    let url = apiforname + msg
-    let data = await axios.get(url)
-    result = data.data
-  }
-  else {
 
-    let url = apifordex + msg
-    let data = await axios.get(url)
-    result = data.data
-  }
-  let msgd = ''
-  for (let i = 0; i < Object.keys(result).length; i++) {
-    msgd += `${boldify(Object.keys(result)[i])} : ${result[Object.keys(result)[i]]}\n`
-  }
-  if (Object.keys(result).includes('sprites')) {
-    msgd = msgd.split('𝘀𝗽𝗿𝗶𝘁𝗲𝘀')[0]
-    sendImage.sendImageWithMessage(api, event, msgd, result['sprites'])
-
-  }
-  else {
-  api.sendMessage(msgd, event.threadID, event.messageID)
-  
-  }
-}
-
-const pokedex2 = (api, event)=>{
+const pokedex = (api, event)=>{
     let msg = event.body.split('pokedex')[1].trim()
+    let pokemonData = pokedexer.pokemon(msg)
+    let presentationMessage = `Pokemon Presentation: ${boldify(pokemonData.name.charAt(0).toUpperCase() + pokemonData.name.slice(1))} (ID: ${pokemonData.id})\n`;
+
+    for (const key in pokemonData) {
+      if (key !== 'name' && key !== 'sprites') {
+          presentationMessage += `${boldify(key.replace('_', ' ').toUpperCase())}: ${pokemonData[key]}\n`;
+      }
+    }
+    sendImage.sendImageWithMessage(api, event, presentationMessage, pokemonData.sprites.animated, '.gif')
 }
 
 
 module.exports = {
-  pokedex: pokedex2
+  pokedex
 }
