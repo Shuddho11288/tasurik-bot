@@ -1,8 +1,6 @@
 const axios = require("axios");
 const fs = require("fs");
 
-
-
 const sendImage = async (api, event, url, mode = "png") => {
   let isokay = true;
   let response = null;
@@ -34,7 +32,7 @@ const sendImage = async (api, event, url, mode = "png") => {
           {
             attachment: response,
           },
-          event.threadID,
+          event.threadID
         )
         .then((...val) => {
           fs.unlinkSync(path);
@@ -48,16 +46,20 @@ const sendImage = async (api, event, url, mode = "png") => {
     api.sendMessage(
       "Sorry, could not fetch the image at this time.",
       event.threadID,
-      event.messageID,
+      event.messageID
     );
   }
 };
 
-const sendImageWithMessage = async (api, event, msg, url) => {
+const sendImageWithMessage = async (api, event, msg, url, ext = ".png") => {
   let isokay = true;
   let response = null;
   let path =
     __dirname + `/cache/${event.senderID}${process.hrtime.bigint()}.png`;
+  if (ext != ".png") {
+    path =
+      __dirname + `/cache/${event.senderID}${process.hrtime.bigint()}${ext}`;
+  }
   console.log(path);
   if (url) {
     try {
@@ -87,7 +89,7 @@ const sendImageWithMessage = async (api, event, msg, url) => {
             console.log("ok");
             fs.unlinkSync(path);
           },
-          event.messageID,
+          event.messageID
         )
         .then((...val) => {
           console.log("working");
@@ -102,23 +104,24 @@ const sendImageWithMessage = async (api, event, msg, url) => {
     api.sendMessage(
       "Sorry, could not fetch the image at this time.",
       event.threadID,
-      event.messageID,
+      event.messageID
     );
   }
 };
-const { promisify } = require('util');
+const { promisify } = require("util");
 const readFileAsync = promisify(fs.readFile);
 const writeFileAsync = promisify(fs.writeFile);
 
-const sendImageBuffer = async (api, event, img, ext='.gif') => {
+const sendImageBuffer = async (api, event, img, ext = ".gif") => {
   try {
-    const buffer = Buffer.from(img, 'base64');
+    const buffer = Buffer.from(img, "base64");
 
     let outputPath =
       __dirname + `/cache/${event.senderID}${process.hrtime.bigint()}.gif`;
 
-    if (ext!='.gif'){
-      outputPath = __dirname + `/cache/${event.senderID}${process.hrtime.bigint()}.png`;
+    if (ext != ".gif") {
+      outputPath =
+        __dirname + `/cache/${event.senderID}${process.hrtime.bigint()}.png`;
     }
     await writeFileAsync(outputPath, buffer);
 
@@ -129,10 +132,10 @@ const sendImageBuffer = async (api, event, img, ext='.gif') => {
       },
       event.threadID,
       () => {
-        console.log('ok');
+        console.log("ok");
         fs.unlinkSync(outputPath);
       },
-      event.messageID,
+      event.messageID
     );
   } catch (err) {
     console.error(err);
@@ -179,7 +182,7 @@ const sendBulkImage = async (api, event, imgurllist) => {
             fs.unlinkSync(pathList[i]);
           }
         },
-        event.messageID,
+        event.messageID
       )
       .then((...val) => {
         fs.unlinkSync(pathList[i]);

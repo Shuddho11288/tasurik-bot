@@ -1,5 +1,9 @@
 const apifordex = 'https://pypokedexbyshuddho.tasawarshuddho.repl.co/api/pokemon/dex/'
 
+var Pokedex = require('pokedex')
+var pokedex = new Pokedex();
+ 
+
 const sendImage = require('./basicTools/sendImage')
 
 const axios = require('axios')
@@ -19,14 +23,11 @@ const randompoke = () => {
 }
 const pokeguess = async (api, event) => {
   let randdex = randompoke()
-  let pokeurl = apifordex + randdex
-  console.log(pokeurl)
-  let poke = await axios.get(pokeurl)
-  let data = poke.data
+  let data = pokedex.pokemon(randdex)
   let pokename = data['name']
-  let imageurl = data['sprites']
+  let imageurl = data['sprites']['animated']
   pokeguess_queue[event.senderID] = pokename
-  sendImage.sendImageWithMessage(api, event, 'Who is that Pokemon?', imageurl)
+  sendImage.sendImageWithMessage(api, event, 'Who is that Pokemon?', imageurl, '.gif')
 }
 
 const handlepokeguess = async (api, event) => {
@@ -41,7 +42,7 @@ const handlepokeguess = async (api, event) => {
     api.sendMessage('Correct!', event.threadID, event.messageID)
     delete pokeguess_queue[event.senderID]
 
-    dbase = database.getDatabase('pokemonCount')
+    let dbase = database.getDatabase('pokemonCount')
     dbase[event.senderID] == undefined ? dbase[event.senderID] = 1 : dbase[event.senderID] = dbase[event.senderID] + 1
     database.setDatabase('pokemonCount', dbase)
   }
