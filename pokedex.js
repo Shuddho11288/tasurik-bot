@@ -35,9 +35,11 @@ const pokedex = async (api, event) => {
   }
 }
 
-
+const pokedex2 = (api, event)=>{
+    let msg = event.body.split('pokedex')[1].trim()
+}
 
 
 module.exports = {
-  pokedex
+  pokedex: pokedex2
 }
