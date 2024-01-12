@@ -1,7 +1,7 @@
 const database = require('./database')
 const tasurik = require('./tasurik')
 const checkAdmin = require('./basicTools/checkAdmin')
-
+const fetch = require("node-fetch")
 const isSimOn = (event)=>{
   let dbase = database.getDatabase('sim')
   if (dbase[event.threadID] == true){
