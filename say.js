@@ -33,7 +33,7 @@ const say = async (api, event) => {
     );
   } else {
     const gtts = new Gtts(body, lang);
-    let path = "cmds/cache/e.mp3";
+    let path = "cache/e.mp3";
     gtts.save(path, async function (err, result) {
       console.log(err);
       let stream = fs.createReadStream(path);
