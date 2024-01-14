@@ -41,10 +41,10 @@ const bard = async (api, event, opening = false) => {
     prompt = encodeURIComponent(prompt);
   }
 
-  let fullurl = bardURL + prompt;
+  let fullurl = 'https://api-samir.onrender.com/api/bard?question=' + prompt;
   try {
     let response = await axios.get(fullurl);
-    let result = beautifyApiResponse(response.data);
+    let result = response.data.message
     api.sendMessage(result, event.threadID, event.messageID);
   } catch {
     bard(api, event, true);

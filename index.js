@@ -213,7 +213,7 @@ const startApp = () => {
             bard2.bard(api, event);
             //api.sendMessage("This feature is currently disabled.", event.threadID, event.messageID)
           } else if (msg.startsWith("-bard")) {
-            bard.bard(api, event);
+            bard2.bard(api, event);
             //api.sendMessage("This feature is currently disabled.", event.threadID, event.messageID)
           } else if (msg.startsWith("-liner")) {
             liner.liner(api, event);
