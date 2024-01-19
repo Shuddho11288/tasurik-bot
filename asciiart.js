@@ -1,5 +1,5 @@
 const apiu =
-  "https://image.thum.io/get/width/1920/fullpage/noanimate/viewportWidth/1920/viewportHeight/1920/https://memegeneratorapi.tasawarshuddho.repl.co/asciiimg?imgurl=URL&size=200";
+  "https://image.thum.io/get/width/1920/fullpage/noanimate/viewportWidth/1920/viewportHeight/1920/https://memezer-taupe.vercel.app/asciiimg?imgurl=URL&size=200";
 const sendImage = require("./basicTools/sendImage");
 const asciiart = (api, event) => {
   let imgurl = encodeURIComponent(event.messageReply.attachments[0].url);
