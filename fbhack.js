@@ -1,7 +1,7 @@
 const sendImage = require("./basicTools/sendImage");
 const fbhack = async (api, event) => {
   const link =
-    "https://memegeneratorapi.tasawarshuddho.repl.co/fbhack?name=UNAME&imgurl=IMGURL_API";
+    "https://memezer-taupe.vercel.app/fbhack?name=UNAME&imgurl=IMGURL_API";
   const apiURL =
     "https://graph.facebook.com/USER_ID/picture?width=1920&height=1919&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662";
   let targetID = Object.keys(event.mentions)[0] || event.senderID;

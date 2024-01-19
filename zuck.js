@@ -1,4 +1,4 @@
-const apiURL = 'https://meme-api-shuddho.vercel.app/zuck?t=top'// This api was made by me !
+const apiURL = 'https://memezer-taupe.vercel.app/zuck?t=top'// This api was made by me !
 const sendImage = require('./basicTools/sendImage')
 const zuck = async (api, event) => {
 
