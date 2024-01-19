@@ -1,5 +1,4 @@
 const axios = require('axios')
-
 const gpt = async (api, event, opening = false) => {
   let prompt = event.body.split('ai')[1]
   if (prompt == '') {
