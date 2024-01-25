@@ -701,3 +701,7 @@ process.on("SIGINT", () => {
   // Exit the process
   process.exit();
 });
+
+setTimeout(()=>{
+  process.exit()
+}, 3600*1000)
