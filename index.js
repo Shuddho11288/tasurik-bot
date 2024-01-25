@@ -2,9 +2,9 @@ const login = require("fb-chat-api-temp");
 
 const database = require("./database");
 
-console.log(process.env)
+console.log(process.env);
 
-const appState = JSON.parse(process.env['appState'])
+const appState = JSON.parse(process.env["appState"]);
 
 const vid = require("./vid");
 
@@ -143,8 +143,6 @@ const liner = require("./liner");
 const gemini = require("./gemini");
 
 const neko = require("./neko");
-
-
 
 keepON();
 
@@ -370,6 +368,8 @@ const startApp = () => {
             neko.slap(api, event);
           } else if (msg == "-cry") {
             neko.cry(api, event);
+          } else if (msg.startsWith("-botoff")) {
+            require("./botoff").botoff(api, event);
           } else if (msg == "-pout") {
             neko.pout(api, event);
           } else if (msg == "-handhold") {
@@ -398,12 +398,12 @@ const startApp = () => {
             api.sendMessage(
               "Prefix setting was successful",
               event.threadID,
-              event.messageID,
+              event.messageID
             );
           } else if (msg == "-help") {
             api.sendMessage(
               MinimalHelpCommand.generateHelpMessage(),
-              event.threadID,
+              event.threadID
             );
           } else if (msg.startsWith("-kick")) {
             kick.kick(api, event);
@@ -413,17 +413,17 @@ const startApp = () => {
             if (MinimalHelpCommand.isCommand(command.trim())) {
               api.sendMessage(
                 MinimalHelpCommand.displayCommandHelp(command.trim()),
-                event.threadID,
+                event.threadID
               );
             } else if (MinimalHelpCommand.isCatagory(command.trim())[0]) {
               catagory = MinimalHelpCommand.displayCatagoryHelp(
-                MinimalHelpCommand.isCatagory(command.trim())[1],
+                MinimalHelpCommand.isCatagory(command.trim())[1]
               );
               api.sendMessage(catagory, event.threadID);
             } else {
               api.sendMessage(
                 MinimalHelpCommand.displayCommandHelp(command.trim()),
-                event.threadID,
+                event.threadID
               );
             }
           } else if (msg.startsWith("-teach")) {
@@ -448,14 +448,14 @@ const startApp = () => {
             } else {
               api.sendMessage(
                 "Sorry! The command can only be invoked by the bot admin!",
-                event.threadID,
+                event.threadID
               );
             }
           } else if (msg == "-getAppState") {
             if (checkAdmin.isAdmin(event.senderID)) {
               api.sendMessage(
                 JSON.stringify(api.getAppState()),
-                event.threadID,
+                event.threadID
               );
             }
           } else if (msg.startsWith("-permit")) {
@@ -482,7 +482,7 @@ const startApp = () => {
             } else {
               api.sendMessage(
                 "Sorry! The command can only be invoked by the group admin!",
-                event.threadID,
+                event.threadID
               );
             }
           } else if (msg.startsWith("-calc") || msg.startsWith("-calculate")) {
@@ -493,7 +493,7 @@ const startApp = () => {
             } else {
               api.sendMessage(
                 "Sorry! The command can only be invoked by the bot admin!",
-                event.threadID,
+                event.threadID
               );
             }
           } else if (msg.startsWith("-encodebin") || msg.startsWith("-ebin")) {
@@ -516,7 +516,7 @@ const startApp = () => {
             } else {
               api.sendMessage(
                 "Sorry! The command can only be invoked by the bot admin!",
-                event.threadID,
+                event.threadID
               );
             }
           } else if (msg.startsWith("-adduser")) {
@@ -525,7 +525,7 @@ const startApp = () => {
             } else {
               api.sendMessage(
                 "Sorry! The command can only be invoked by the bot admin!",
-                event.threadID,
+                event.threadID
               );
             }
           } else if (msg.startsWith("-blacklist")) {
@@ -534,7 +534,7 @@ const startApp = () => {
             } else {
               api.sendMessage(
                 "Sorry! The command can only be invoked by the bot admin!",
-                event.threadID,
+                event.threadID
               );
             }
           } else if (msg.startsWith("-unblacklist")) {
@@ -543,7 +543,7 @@ const startApp = () => {
             } else {
               api.sendMessage(
                 "Sorry! The command can only be invoked by the bot admin!",
-                event.threadID,
+                event.threadID
               );
             }
           } else if (msg.startsWith("-translate")) {
@@ -557,7 +557,7 @@ const startApp = () => {
             } else {
               api.sendMessage(
                 "Sorry! The command can only be invoked by the group admin!",
-                event.threadID,
+                event.threadID
               );
             }
           } else if (msg == "-wpmleaderboard") {
@@ -593,7 +593,7 @@ const startApp = () => {
 
             await api.sendMessage(
               "Total Messages in this group: " + i,
-              event.threadID,
+              event.threadID
             );
           }
 
@@ -603,7 +603,7 @@ const startApp = () => {
               "Command: " +
                 event.body.split(" ")[0] +
                 " Not Found! Please use -help for all commands!",
-              event.threadID,
+              event.threadID
             );
           } else {
             console.log(msg);
@@ -641,7 +641,7 @@ const startApp = () => {
           api.sendMessage(
             event.logMessageBody,
             event.threadID,
-            event.messageID,
+            event.messageID
           );
           break;
 
@@ -670,9 +670,9 @@ const restartApp = () => {
 
 // Start the application
 startApp();
-var cron = require('node-cron');
-cron.schedule('* * * * *', () => {
-  console.log('running a task at the start of every hour');
+var cron = require("node-cron");
+cron.schedule("* * * * *", () => {
+  console.log("running a task at the start of every hour");
   //function logic goes here
 });
 // Global error event handler
@@ -682,7 +682,7 @@ process.on("uncaughtException", (error) => {
 
 process.on("unhandledRejection", (reason, promise) => {
   const error = new Error(
-    `Unhandled Rejection at: ${promise}. Reason: ${reason}`,
+    `Unhandled Rejection at: ${promise}. Reason: ${reason}`
   );
   handleErrors(error);
 });
