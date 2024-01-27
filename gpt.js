@@ -12,7 +12,7 @@ const gpt = async (api, event, opening = false) => {
 
     try {
       prompt = prompt.trim().split(' ').join('+')
-      let url = process.env['gptApiUrl'] + prompt
+      let url = 'http://eu4.diresnode.com:3301/gpt4?idd=1&prompt=' + prompt
       //console.log(url)
       let result = await axios.get(url)
       //console.log(result)
