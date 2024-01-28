@@ -232,7 +232,7 @@ const deposit = async (api, event) => {
     } else {
       money = money;
     }
-  } else if (money == undefined || isNaN(money)) {
+  } else if (money == undefined || isNaN(money) || money < 0) {
     api.sendMessage(
       `[DEPOSIT] You need to specify an amount to deposit`,
       event.threadID,
@@ -276,7 +276,7 @@ const withdraw = async (api, event) => {
     return;
   }
   let money = Number(event.body.split(" ")[1]);
-  if (money == undefined || isNaN(money)) {
+  if (money == undefined || isNaN(money) || money < 0) {
     api.sendMessage(
       `[WITHDRAW] You need to specify an amount to withdraw`,
       event.threadID,
