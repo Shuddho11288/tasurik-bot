@@ -11,11 +11,11 @@ const gpt = async (api, event, opening = false) => {
 
     try {
       prompt = prompt.trim().split(' ').join('+')
-      let url = process.env['aiApiUrl'] + prompt
+      let url = 'https://bluerepoapislasttry.onrender.com/hercai?content=' + prompt
       //console.log(url)
       let result = await axios.get(url)
       //console.log(result)
-      let response = result.data.message
+      let response = result.data.reply
       console.log(response)
 
       await api.sendMessage(response, event.threadID, event.messageID)
