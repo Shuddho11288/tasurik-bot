@@ -3,6 +3,13 @@ let lastDailyTaken = database.getDatabase("lastDailyTaken");
 const checkAdmin = require("./basicTools/checkAdmin");
 const boldify = require("./boldify");
 let lastWorkInvoked = {};
+function stringifyNumber(num) {
+    const [integer, decimals] = num.toString().split(".");
+    if (decimals) {
+        return BigInt(integer).toString() + "." + BigInt(decimals).toString();
+    }
+    return BigInt(integer).toString();
+}
 
 let lastStealInvoked = {};
 let lastInvestInvoked = {};
@@ -67,7 +74,7 @@ const buyBankSpace = (api, event) => {
   }
   let buy = { bankspace: 2000 };
   let money = getBal(event.senderID);
-  if (money < buy["bankspace"] * quantity) {
+  if (money < buy["bankspace"] * quantity || buy["bankspace"] * quantity< 0) {
     api.sendMessage(
       `️ [BUY] ️\n\n️ You don't have enough money to buy this item.\nBANK SPACE PRICE = 2000$\nEach Bank Space = 1000$`,
       event.threadID,
@@ -99,9 +106,9 @@ const balance = async (api, event) => {
     let wallet = getBal(Object.keys(event.mentions)[0]);
     let bank = getBank(Object.keys(event.mentions)[0]);
     api.sendMessage(
-      `[BALANCE] ${name}'s balance:\n\nWallet: ${wallet.toFixed(
+      `[BALANCE] ${name}'s balance:\n\nWallet: ${stringifyNumber(wallet.toFixed(
         2,
-      )}$\nBank: ${bank.toFixed(2)}$/${getBankSpace(
+      ))}$\nBank: ${bank.toFixed(2)}$/${getBankSpace(
         Object.keys(event.mentions)[0],
       )}$`,
       event.threadID,
