@@ -16,7 +16,7 @@ const gpt = async (api, event, opening = false) => {
       //console.log(url)
       let result = await axios.get(url)
       //console.log(result)
-      let response = result.data.response
+      let response = result.data['gpt4']
       console.log(response)
 
       await api.sendMessage(response, event.threadID, event.messageID)

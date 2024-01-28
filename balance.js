@@ -3,12 +3,15 @@ let lastDailyTaken = database.getDatabase("lastDailyTaken");
 const checkAdmin = require("./basicTools/checkAdmin");
 const boldify = require("./boldify");
 let lastWorkInvoked = {};
-function stringifyNumber(num) {
-    const [integer, decimals] = num.toString().split(".");
-    if (decimals) {
-        return BigInt(integer).toString() + "." + BigInt(decimals).toString();
-    }
-    return BigInt(integer).toString();
+function stringifyNumber(scientificNotation) {
+    // Convert the scientific notation to a BigInt
+    const decimalNumber = parseFloat(scientificNotation);
+    const bigIntNumber = BigInt(decimalNumber);
+
+    // Convert the BigInt to a string without scientific notation
+    const result = bigIntNumber.toString();
+
+    return result;
 }
 
 let lastStealInvoked = {};
@@ -118,9 +121,9 @@ const balance = async (api, event) => {
     let wallet = getBal(event.senderID);
     let bank = getBank(event.senderID);
     api.sendMessage(
-      `[BALANCE] Your balance:\n\nWallet: ${wallet.toFixed(
+      `[BALANCE] Your balance:\n\nWallet: ${stringifyNumber(wallet.toFixed(
         2,
-      )}$\nBank: ${bank.toFixed(2)}$/${getBankSpace(event.senderID)}$`,
+      ))}$\nBank: ${stringifyNumber(bank.toFixed(2))}$/${stringifyNumber(getBankSpace(event.senderID))}$`,
       event.threadID,
       event.messageID,
     );
@@ -512,7 +515,7 @@ const bankboard = async (api, event) => {
     var user_name = await api.getUserInfo(key);
     //console.log(user_name)
     let h = boldify("RANK:" + (i + 1) + " " + user_name[key].name);
-    reply += `${h}: ${value.toFixed(2)}$\n`;
+    reply += `${h}: ${stringifyNumber(value.toFixed(2))}$\n`;
     i++;
     if (i == 5) {
       break;
