@@ -5,7 +5,7 @@ const boldify = require("./boldify");
 let lastWorkInvoked = {};
 function stringifyNumber(scientificNotation) {
     // Convert the scientific notation to a BigInt
-    const decimalNumber = parseFloat(scientificNotation);
+    const decimalNumber = parseFloat(Math.floor(scientificNotation));
     const bigIntNumber = BigInt(decimalNumber);
 
     // Convert the BigInt to a string without scientific notation
