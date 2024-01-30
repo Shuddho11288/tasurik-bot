@@ -164,7 +164,10 @@ const batslap = async (api, event) => {
   let targetID = Object.keys(event.mentions)[0] || event.senderID;
   let url = apiURL.replace("USER_ID", targetID);
   url = await unshortenUrl(url);
-  let img = await new DIG.Batslap().getImage(url);
+  let nurl = await unshortenUrl("https://graph.facebook.com/USER_ID/picture?width=1920&height=1919&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662".replace("USER_ID", event.senderID))
+  
+
+  let img = await new DIG.Batslap().getImage(nurl, url);
   console.log(img);
   sendImage.sendImageBuffer(api, event, img, 'png');
 };
@@ -194,7 +197,10 @@ const bed = async (api, event) => {
   let targetID = Object.keys(event.mentions)[0] || event.senderID;
   let url = apiURL.replace("USER_ID", targetID);
   url = await unshortenUrl(url);
-  let img = await new DIG.Bed().getImage(url);
+  let nurl = await unshortenUrl("https://graph.facebook.com/USER_ID/picture?width=1920&height=1919&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662".replace("USER_ID", event.senderID))
+  
+
+  let img = await new DIG.Bed().getImage(nurl, url);
   console.log(img);
   sendImage.sendImageBuffer(api, event, img, 'png');
 };
@@ -314,7 +320,10 @@ const doublestonk = async (api, event) => {
   let targetID = Object.keys(event.mentions)[0] || event.senderID;
   let url = apiURL.replace("USER_ID", targetID);
   url = await unshortenUrl(url);
-  let img = await new DIG.DoubleStonk().getImage(url);
+  let nurl = await unshortenUrl("https://graph.facebook.com/USER_ID/picture?width=1920&height=1919&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662".replace("USER_ID", event.senderID))
+  
+
+  let img = await new DIG.DoubleStonk().getImage(nurl, url);
   console.log(img);
   sendImage.sendImageBuffer(api, event, img, 'png');
 };
@@ -404,7 +413,10 @@ const kiss = async (api, event) => {
   let targetID = Object.keys(event.mentions)[0] || event.senderID;
   let url = apiURL.replace("USER_ID", targetID);
   url = await unshortenUrl(url);
-  let img = await new DIG.Kiss().getImage(url);
+  let nurl = await unshortenUrl("https://graph.facebook.com/USER_ID/picture?width=1920&height=1919&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662".replace("USER_ID", event.senderID))
+  
+
+  let img = await new DIG.Kiss().getImage(nurl, url);
   console.log(img);
   sendImage.sendImageBuffer(api, event, img, 'png');
 };
@@ -479,7 +491,10 @@ const podium = async (api, event) => {
   let targetID = Object.keys(event.mentions)[0] || event.senderID;
   let url = apiURL.replace("USER_ID", targetID);
   url = await unshortenUrl(url);
-  let img = await new DIG.Podium().getImage(url);
+  let nurl = await unshortenUrl("https://graph.facebook.com/USER_ID/picture?width=1920&height=1919&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662".replace("USER_ID", event.senderID))
+  
+
+  let img = await new DIG.Podium().getImage(nurl, url, nurl, 'nigga1', 'nigga2', 'nigga3');
   console.log(img);
   sendImage.sendImageBuffer(api, event, img, 'png');
 };

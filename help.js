@@ -162,86 +162,86 @@ const helpDict = {
       "Create rainbow effect to one's profile picture.\nSyntax: -rainbow <@mention>",
   },
   "🥴 DIG": {
-    blur: "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
-    gay: "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+    blur: "Create blur effect to one's profile picture.\nSyntax: -blur <@mention>",
+    gay: "Create gay effect to one's profile picture.\nSyntax: -gay <@mention>",
     greyscale:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create greyscale effect to one's profile picture.\nSyntax: -greyscale <@mention>",
     invert:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create invert effect to one's profile picture.\nSyntax: -invert <@mention>",
     sepia:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create sepia effect to one's profile picture.\nSyntax: -sepia <@mention>",
     blink:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create blink effect to one's profile picture.\nSyntax: -blink <@mention>",
     triggered:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
-    ad: "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create triggered effect to one's profile picture.\nSyntax: -triggered <@mention>",
+    ad: "Create ad effect to one's profile picture.\nSyntax: -ad <@mention>",
     affect:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create affect effect to one's profile picture.\nSyntax: -affect <@mention>",
     batslap:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create batslap effect to one's profile picture.\nSyntax: -batslap <@mention>",
     beautiful:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
-    bed: "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create beautiful effect to one's profile picture.\nSyntax: -beautiful <@mention>",
+    bed: "Create bed effect to one's profile picture.\nSyntax: -bed <@mention>",
     bobross:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create bobross effect to one's profile picture.\nSyntax: -bobross <@mention>",
     clown:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create clown effect to one's profile picture.\nSyntax: -clown <@mention>",
     confusedstonk:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create confusedstonk effect to one's profile picture.\nSyntax: -confusedstonk <@mention>",
     deepfry:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create deepfry effect to one's profile picture.\nSyntax: -deepfry <@mention>",
     delete:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create delete effect to one's profile picture.\nSyntax: -delete <@mention>",
     discordblack:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create discordblack effect to one's profile picture.\nSyntax: -discordblack <@mention>",
     discordblue:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create discordblue effect to one's profile picture.\nSyntax: -discordblue <@mention>",
     doublestonk:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create doublestonk effect to one's profile picture.\nSyntax: -doublestonk <@mention>",
     facepalm:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create facepalm effect to one's profile picture.\nSyntax: -facepalm <@mention>",
     heartbreaking:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create heartbreaking effect to one's profile picture.\nSyntax: -heartbreaking <@mention>",
     hitler:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
-    jail: "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create hitler effect to one's profile picture.\nSyntax: -hitler <@mention>",
+    jail: "Create jail effect to one's profile picture.\nSyntax: -jail <@mention>",
     karaba:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
-    kiss: "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create karaba effect to one's profile picture.\nSyntax: -karaba <@mention>",
+    kiss: "Create kiss effect to one's profile picture.\nSyntax: -kiss <@mention>",
     lisapresentation:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create lisapresentation effect to one's profile picture.\nSyntax: -lisapresentation <@mention>",
     mikkelsen:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
-    mms: "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create mikkelsen effect to one's profile picture.\nSyntax: -mikkelsen <@mention>",
+    mms: "Create mms effect to one's profile picture.\nSyntax: -mms <@mention>",
     notstonk:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create notstonk effect to one's profile picture.\nSyntax: -notstonk <@mention>",
     podium:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create podium effect to one's profile picture.\nSyntax: -podium <@mention>",
     poutine:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
-    rip: "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create poutine effect to one's profile picture.\nSyntax: -poutine <@mention>",
+    rip: "Create rip effect to one's profile picture.\nSyntax: -rip <@mention>",
     snyder:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create snyder effect to one's profile picture.\nSyntax: -snyder <@mention>",
     spank:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create spank effect to one's profile picture.\nSyntax: -spank <@mention>",
     stonk:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create stonk effect to one's profile picture.\nSyntax: -stonk <@mention>",
     tatoo:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create tatoo effect to one's profile picture.\nSyntax: -tatoo <@mention>",
     thomas:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create thomas effect to one's profile picture.\nSyntax: -thomas <@mention>",
     trash:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create trash effect to one's profile picture.\nSyntax: -trash <@mention>",
     wanted:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create wanted effect to one's profile picture.\nSyntax: -wanted <@mention>",
     circle:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create circle effect to one's profile picture.\nSyntax: -circle <@mention>",
     color:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create color effect to one's profile picture.\nSyntax: -color <@mention>",
     denoise:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create denoise effect to one's profile picture.\nSyntax: -denoise <@mention>",
     mirror:
-      "Create trigger effect to one's profile picture.\nSyntax: -trigger <@mention>",
+      "Create mirror effect to one's profile picture.\nSyntax: -mirror <@mention>",
   },
   "🛜 API Related": {
     translate:
