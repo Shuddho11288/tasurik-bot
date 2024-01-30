@@ -782,7 +782,11 @@ setTimeout(restartApp, 10 * 1000);
 
 // Keep the process alive
 process.stdin.resume();
-
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 // Handle process termination
 process.on("SIGINT", () => {
   console.log("App is terminating...");
@@ -794,4 +798,4 @@ process.on("SIGINT", () => {
 
 setTimeout(() => {
   process.exit();
-}, 3600 * 1000);
+}, getRandomInt(3600 * 1000, 7200*1000))
