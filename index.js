@@ -2,6 +2,8 @@ const login = require("fb-chat-api-temp");
 
 const database = require("./database");
 
+const dig = require("./dig");
+
 console.log(process.env);
 
 const appState = JSON.parse(process.env["appState"]);
@@ -270,6 +272,94 @@ const startApp = () => {
             quiz.quiz_leaderboard(api, event);
           } else if (msg.startsWith("-lexica")) {
             imagine.imagineHerc(api, event, "lexica");
+          } else if (msg.startsWith("-blur")) {
+            dig.blur(api, event);
+          } else if (msg.startsWith("-gay")) {
+            dig.gay(api, event);
+          } else if (msg.startsWith("-greyscale")) {
+            dig.greyscale(api, event);
+          } else if (msg.startsWith("-invert")) {
+            dig.invert(api, event);
+          } else if (msg.startsWith("-sepia")) {
+            dig.sepia(api, event);
+          } else if (msg.startsWith("-blink")) {
+            dig.blink(api, event);
+          } else if (msg.startsWith("-triggered")) {
+            dig.triggered(api, event);
+          } else if (msg.startsWith("-ad")) {
+            dig.ad(api, event);
+          } else if (msg.startsWith("-affect")) {
+            dig.affect(api, event);
+          } else if (msg.startsWith("-batslap")) {
+            dig.batslap(api, event);
+          } else if (msg.startsWith("-beautiful")) {
+            dig.beautiful(api, event);
+          } else if (msg.startsWith("-bed")) {
+            dig.bed(api, event);
+          } else if (msg.startsWith("-bobross")) {
+            dig.bobross(api, event);
+          } else if (msg.startsWith("-clown")) {
+            dig.clown(api, event);
+          } else if (msg.startsWith("-confusedstonk")) {
+            dig.confusedstonk(api, event);
+          } else if (msg.startsWith("-deepfry")) {
+            dig.deepfry(api, event);
+          } else if (msg.startsWith("-delete")) {
+            dig.delete(api, event);
+          } else if (msg.startsWith("-discordblack")) {
+            dig.discordblack(api, event);
+          } else if (msg.startsWith("-discordblue")) {
+            dig.discordblue(api, event);
+          } else if (msg.startsWith("-doublestonk")) {
+            dig.doublestonk(api, event);
+          } else if (msg.startsWith("-facepalm")) {
+            dig.facepalm(api, event);
+          } else if (msg.startsWith("-heartbreaking")) {
+            dig.heartbreaking(api, event);
+          } else if (msg.startsWith("-hitler")) {
+            dig.hitler(api, event);
+          } else if (msg.startsWith("-jail")) {
+            dig.jail(api, event);
+          } else if (msg.startsWith("-karaba")) {
+            dig.karaba(api, event);
+          } else if (msg.startsWith("-kiss")) {
+            dig.kiss(api, event);
+          } else if (msg.startsWith("-lisapresentation")) {
+            dig.lisapresentation(api, event);
+          } else if (msg.startsWith("-mikkelsen")) {
+            dig.mikkelsen(api, event);
+          } else if (msg.startsWith("-mms")) {
+            dig.mms(api, event);
+          } else if (msg.startsWith("-notstonk")) {
+            dig.notstonk(api, event);
+          } else if (msg.startsWith("-podium")) {
+            dig.podium(api, event);
+          } else if (msg.startsWith("-poutine")) {
+            dig.poutine(api, event);
+          } else if (msg.startsWith("-rip")) {
+            dig.rip(api, event);
+          } else if (msg.startsWith("-snyder")) {
+            dig.snyder(api, event);
+          } else if (msg.startsWith("-spank")) {
+            dig.spank(api, event);
+          } else if (msg.startsWith("-stonk")) {
+            dig.stonk(api, event);
+          } else if (msg.startsWith("-tatoo")) {
+            dig.tatoo(api, event);
+          } else if (msg.startsWith("-thomas")) {
+            dig.thomas(api, event);
+          } else if (msg.startsWith("-trash")) {
+            dig.trash(api, event);
+          } else if (msg.startsWith("-wanted")) {
+            dig.wanted(api, event);
+          } else if (msg.startsWith("-circle")) {
+            dig.circle(api, event);
+          } else if (msg.startsWith("-color")) {
+            dig.color(api, event);
+          } else if (msg.startsWith("-denoise")) {
+            dig.denoise(api, event);
+          } else if (msg.startsWith("-mirror")) {
+            dig.mirror(api, event);
           } else if (msg.startsWith("-prodia")) {
             imagine.imagineHerc(api, event, "prodia");
           } else if (msg.startsWith("-imagine")) {
@@ -702,6 +792,6 @@ process.on("SIGINT", () => {
   process.exit();
 });
 
-setTimeout(()=>{
-  process.exit()
-}, 3600*1000)
+setTimeout(() => {
+  process.exit();
+}, 3600 * 1000);
