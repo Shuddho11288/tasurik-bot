@@ -10,13 +10,13 @@ const neko = async (api, event) => {
 const waifu = async (api, event) => {
   let url = "https://nekos.best/api/v2/" + "waifu";
   let response = await axios.get(url);
-  sendImage.sendImage(api, event, response.data.results[0].url, "gif");
+  sendImage.sendImage(api, event, response.data.results[0].url, "png");
 };
 
 const husbando = async (api, event) => {
   let url = "https://nekos.best/api/v2/" + "husbando";
   let response = await axios.get(url);
-  sendImage.sendImage(api, event, response.data.results[0].url, "gif");
+  sendImage.sendImage(api, event, response.data.results[0].url, "png");
 };
 
 const kitsune = async (api, event) => {
