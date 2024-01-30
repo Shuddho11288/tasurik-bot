@@ -305,7 +305,7 @@ const startApp = () => {
           } else if (msg.startsWith("-deepfry")) {
             dig.deepfry(api, event);
           } else if (msg.startsWith("-delete")) {
-            dig.delete(api, event);
+            dig.deletepic(api, event);
           } else if (msg.startsWith("-discordblack")) {
             dig.discordblack(api, event);
           } else if (msg.startsWith("-discordblue")) {

@@ -89,17 +89,25 @@ const sepia = async (api, event) => {
 
 
 const blink = async (api, event) => {
-  const apiURL =
-    "https://graph.facebook.com/USER_ID/picture?width=1920&height=1919&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662";
-  let targetID = Object.keys(event.mentions)[0] || event.senderID;
-  let url = apiURL.replace("USER_ID", targetID);
-  url = await unshortenUrl(url);
-  let nurl = await unshortenUrl("https://graph.facebook.com/USER_ID/picture?width=1920&height=1919&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662".replace("USER_ID", event.senderID))
-
-  let img = await new DIG.Blink().getImage(100, nurl, url);
-  console.log(img);
-  sendImage.sendImageBuffer(api, event, img);
-};
+    try{
+        var ms = Number(event.body.split('|')[1]) || 100
+    }
+    catch {
+        let ms = 100
+    }
+    
+    const apiURL =
+      "https://graph.facebook.com/USER_ID/picture?width=1920&height=1919&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662";
+    let targetID = Object.keys(event.mentions)[0] || event.senderID;
+    let url = apiURL.replace("USER_ID", targetID);
+    url = await unshortenUrl(url);
+    let nurl = await unshortenUrl("https://graph.facebook.com/USER_ID/picture?width=1920&height=1919&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662".replace("USER_ID", event.senderID))
+  
+    let img = await new DIG.Blink().getImage(ms, nurl, url);
+    console.log(img);
+    sendImage.sendImageBuffer(api, event, img);
+  };
+  
 
 
 
