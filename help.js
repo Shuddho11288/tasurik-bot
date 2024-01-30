@@ -51,6 +51,7 @@ const helpDict = {
       "It is the command to start Word guess competition in a group!\nSyntax: -wordguesschampionship <rounds>",
     bored:
       "It will send you a random way to spend your boring time\nSyntax: -bored",
+    gtf: "Guess the footballer! \n Syntax: -gtf",
   },
   "🫎 Pokemon": {
     pokedex:

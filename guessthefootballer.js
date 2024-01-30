@@ -240,8 +240,8 @@ function logResults(error, results) {
   }
   else {
     // sendRandomImage
-    ranURL = results[Math.floor(Math.random() * results.length)].url
-    sendImage.sendImage(api, event, ranURL, 'png');
+    let ranURL = results[Math.floor(Math.random() * results.length)].url
+    sendImage.sendImageWithMessage(api, event, ranURL, 'Guess The Footballer! ','.png');
   }
 }
 }
