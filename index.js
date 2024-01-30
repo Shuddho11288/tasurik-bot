@@ -1,6 +1,6 @@
 const login = require("fb-chat-api-temp");
 
-const gtf = require('./guessthefootballer')
+const gtf = require("./guessthefootballer");
 
 const database = require("./database");
 
@@ -174,8 +174,8 @@ const startApp = () => {
           wpm.handleWpm(api, event);
 
           wordguess.handleChampionship(api, event);
-          
-          gtf.handleGuessTheFootballer(api, event)
+
+          gtf.handleGuessTheFootballer(api, event);
 
           anagram.handle_anagram(api, event);
 
@@ -205,6 +205,15 @@ const startApp = () => {
             ai.ai(api, event);
           } else if (msg == "-sim") {
             sim.sim(api, event);
+          } else if (msg.startsWith("-adduser")) {
+            if (await checkAdmin.isGrpAdmin(api, event)) {
+              adduser.adduser(api, event);
+            } else {
+              api.sendMessage(
+                "Sorry! The command can only be invoked by the bot admin!",
+                event.threadID
+              );
+            }
           } else if (msg.startsWith("-herc")) {
             if (msg.includes("v3")) {
               herc.aiharcbetav3(api, event);
@@ -216,10 +225,9 @@ const startApp = () => {
           } else if (msg.startsWith("-bard2")) {
             bard2.bard(api, event);
             //api.sendMessage("This feature is currently disabled.", event.threadID, event.messageID)
-          } else if (msg.startsWith('-gtf')){
-            gtf.guessFootballer(api, event)
-          }
-          else if (msg.startsWith("-bard")) {
+          } else if (msg.startsWith("-gtf")) {
+            gtf.guessFootballer(api, event);
+          } else if (msg.startsWith("-bard")) {
             bard2.bard(api, event);
             //api.sendMessage("This feature is currently disabled.", event.threadID, event.messageID)
           } else if (msg.startsWith("-liner")) {
@@ -616,15 +624,6 @@ const startApp = () => {
                 event.threadID
               );
             }
-          } else if (msg.startsWith("-adduser")) {
-            if (await checkAdmin.isGrpAdmin(api, event)) {
-              adduser.adduser(api, event);
-            } else {
-              api.sendMessage(
-                "Sorry! The command can only be invoked by the bot admin!",
-                event.threadID
-              );
-            }
           } else if (msg.startsWith("-blacklist")) {
             if (await checkAdmin.isAdmin(event.senderID)) {
               blacklister.blacklist(api, event);
@@ -790,9 +789,9 @@ setTimeout(restartApp, 10 * 1000);
 // Keep the process alive
 process.stdin.resume();
 function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 // Handle process termination
 process.on("SIGINT", () => {
@@ -805,4 +804,4 @@ process.on("SIGINT", () => {
 
 setTimeout(() => {
   process.exit();
-}, getRandomInt(3600 * 1000, 7200*1000))
+}, getRandomInt(3600 * 1000, 7200 * 1000));
