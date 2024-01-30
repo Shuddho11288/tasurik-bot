@@ -1,5 +1,7 @@
 const login = require("fb-chat-api-temp");
 
+const gtf = require('./guessthefootballer')
+
 const database = require("./database");
 
 const dig = require("./dig");
@@ -172,6 +174,8 @@ const startApp = () => {
           wpm.handleWpm(api, event);
 
           wordguess.handleChampionship(api, event);
+          
+          gtf.handleGuessTheFootballer(api, event)
 
           anagram.handle_anagram(api, event);
 
@@ -212,7 +216,10 @@ const startApp = () => {
           } else if (msg.startsWith("-bard2")) {
             bard2.bard(api, event);
             //api.sendMessage("This feature is currently disabled.", event.threadID, event.messageID)
-          } else if (msg.startsWith("-bard")) {
+          } else if (msg.startsWith('-gtf')){
+            gtf.guessFootballer(api, event)
+          }
+          else if (msg.startsWith("-bard")) {
             bard2.bard(api, event);
             //api.sendMessage("This feature is currently disabled.", event.threadID, event.messageID)
           } else if (msg.startsWith("-liner")) {
