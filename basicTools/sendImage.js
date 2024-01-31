@@ -32,7 +32,7 @@ const sendImage = async (api, event, url, mode = "png") => {
           {
             attachment: response,
           },
-          event.threadID
+          event.threadID,event.messageID
         )
         .then((...val) => {
           fs.unlinkSync(path);
