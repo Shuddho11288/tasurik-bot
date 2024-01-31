@@ -4,7 +4,7 @@ const fs = require("fs");
 const sendImage = async (api, event, url, mode = "png") => {
   let isokay = true;
   let response = null;
-  let path =
+  var path =
     __dirname + `/cache/${event.senderID}${process.hrtime.bigint()}.png`;
   if (mode != "png") {
     path = path.replace(".png", "." + mode);
