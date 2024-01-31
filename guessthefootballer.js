@@ -1,6 +1,6 @@
 var gis = require('g-i-s');
 const sendImage = require("./basicTools/sendImage");
-
+const axios = require('axios')
 verybiglist = `Lionel Messi
 Cristiano Ronaldo
 Neymar Jr.
@@ -229,21 +229,28 @@ Rúben Neves
 Cristiano Ronaldo
 Diogo Jota`.split('\n')
 let guessthefootballerqueue = {}
-const guessFootballer = (api, event)=>{
+const guessFootballer = async (api, event)=>{
     footballer = verybiglist[Math.floor(Math.random() * verybiglist.length)];
     guessthefootballerqueue[event.senderID] = footballer;
-    gis(footballer, logResults);
+        let url =  'https://www.google.com/search?as_st=y&tbm=isch&as_q=messi&as_epq=&as_oq=&as_eq=&imgsz=&imgar=&imgc=&imgcolor=&imgtype=&cr=&as_sitesearch=&as_filetype=&tbs='.replace('messi', footballer)
+    let response =  await axios.get(url)
+    console.log(response.data)
+    
+// Regular expression to extract URLs from img tags
+const imgTagRegex = /<img.*?src=["'](.*?)["'].*?>/g;
 
-function logResults(error, results) {
-  if (error) {
-    console.log(error);
-  }
-  else {
-    // sendRandomImage
-    let ranURL = results[Math.floor(Math.random() * results.length)].url
-    sendImage.sendImageBuffer(api, event, 'https://image.thum.io/get/width/1920/crop/400/fullpage/noanimate/'+ranURL);
-  }
-}
+// Find all matches in the HTML content
+const matches = response.data.match(imgTagRegex);
+
+// Extract the URLs from the matches
+const imgUrls = matches.map(match => {
+    const srcRegex = /src=["'](.*?)["']/;
+    const srcMatch = match.match(srcRegex);
+    return srcMatch ? srcMatch[1] : null;
+}).filter(url => url !== null);
+  
+  sendImage.sendImage(api, event, 'https://image.thum.io/get/width/1920/crop/400/fullpage/noanimate/'+imgUrls)
+
 }
 
 const handleGuessTheFootballer = async (api, event) => {
