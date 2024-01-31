@@ -1023,7 +1023,7 @@ const imgUrls = matches.map(match => {
     const srcMatch = match.match(srcRegex);
     return srcMatch ? srcMatch[1] : null;
 }).filter(url => url !== null);
-  
+  api.sendMessage( 'https://image.thum.io/get/fullpage/image/fit/200x350/'+imgUrls[3], event.threadID, event.messageID)
   sendImage.sendImageWithMessage(api, event , 'Guess The Footballer !', 'https://image.thum.io/get/fullpage/image/fit/200x350/'+imgUrls)
 
 }

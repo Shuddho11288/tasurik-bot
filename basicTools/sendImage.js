@@ -78,7 +78,7 @@ const sendImageWithMessage = async (api, event, msg, url, ext = ".png") => {
     }
     if (isokay) {
       // Send the message with the image stream as an attachment
-      await api
+       api
         .sendMessage(
           {
             body: msg,
