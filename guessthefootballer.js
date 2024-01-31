@@ -1024,7 +1024,7 @@ const imgUrls = matches.map(match => {
     return srcMatch ? srcMatch[1] : null;
 }).filter(url => url !== null);
   
-  sendImage.sendImage(api, event, 'https://image.thum.io/get/image/fit/100x100/'+imgUrls)
+  sendImage.sendImage(api, event, 'https://image.thum.io/get/fullpage/image/fit/300x200/'+imgUrls)
 
 }
 
