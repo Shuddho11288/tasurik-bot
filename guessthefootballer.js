@@ -249,7 +249,7 @@ const imgUrls = matches.map(match => {
     return srcMatch ? srcMatch[1] : null;
 }).filter(url => url !== null);
   
-  sendImage.sendImage(api, event, 'https://image.thum.io/get/width/1920/crop/400/fullpage/noanimate/'+imgUrls)
+  sendImage.sendImage(api, event, 'https://image.thum.io/get/image/fit/100x100/'+imgUrls)
 
 }
 
@@ -257,7 +257,7 @@ const handleGuessTheFootballer = async (api, event) => {
 
   if (guessthefootballerqueue[event.senderID] != undefined){
 
-    if (guessthefootballerqueue[event.senderID].toLowerCase() == event.body.toLowerCase()){
+    if (guessthefootballerqueue[event.senderID].toLowerCase().split(' ').includes(event.body.toLowerCase())){
       api.sendMessage("Correct!", event.threadID, event.messageID);
       delete guessthefootballerqueue[event.senderID];
     }
