@@ -1,6 +1,8 @@
 var gis = require('g-i-s');
 const sendImage = require("./basicTools/sendImage");
 const axios = require('axios')
+const boldify = require('./boldify')
+const database = require('./database')
 const verybiglist = `L. Messi
 Cristiano Ronaldo
 Neymar Jr
@@ -1026,6 +1028,27 @@ const imgUrls = matches.map(match => {
 
 }
 
+const gtfleaderboard = async (api, event) => {
+    let nwpm_queue = database.getDatabase("gtf_queue");
+    let reply = boldify("Here is the GTF leaderboard:\n\n");
+    const sortedData = Object.fromEntries(
+      Object.entries(nwpm_queue).sort(([, a], [, b]) => b - a),
+    );
+  
+    let i = 0;
+    for (const [key, value] of Object.entries(sortedData)) {
+      var user_name = await api.getUserInfo(key);
+      //console.log(user_name)
+      let h = boldify("RANK:" + (i + 1) + " " + user_name[key].name);
+      reply += `${h}: ${value}\n`;
+      i++;
+      if (i == 5) {
+        break;
+      }
+    }
+    api.sendMessage(reply, event.threadID, event.messageID);
+  };
+
 const handleGuessTheFootballer = async (api, event) => {
 
   if (guessthefootballerqueue[event.senderID] != undefined){
@@ -1033,6 +1056,10 @@ const handleGuessTheFootballer = async (api, event) => {
     if (guessthefootballerqueue[event.senderID].toLowerCase().split(' ').includes(event.body.toLowerCase())){
       api.sendMessage("Correct!", event.threadID, event.messageID);
       delete guessthefootballerqueue[event.senderID];
+            let nwpm_queue = database.getDatabase("gtf_queue");
+      let am = nwpm_queue[event.senderID] || 0
+      nwpm_queue[event.senderID] = am + 1;
+      database.setDatabase("gtf_queue", nwpm_queue);
     }
     else{
       api.sendMessage("Wrong! The Correct Answer will be "+ guessthefootballerqueue[event.senderID], event.threadID, event.messageID);
@@ -1044,5 +1071,6 @@ const handleGuessTheFootballer = async (api, event) => {
 
 module.exports = {
   guessFootballer,
-  handleGuessTheFootballer
+  handleGuessTheFootballer,
+  gtfleaderboard
 }
