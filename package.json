@@ -1,54 +1,56 @@
 {
-  "name": "glitch-hello-node",
+  "name": "tasurik",
   "version": "0.1.0",
-  "description": "A simple Node app built on fastify, instantly up and running. Built to be remixed on Glitch.com.",
+  "description": "A simple messenger bot by shuddho.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "newcmd": "node createCommand.js"
   },
   "dependencies": {
-    "@fastify/formbody": "^7.4.0",
-    "@fastify/static": "^6.10.2",
-    "@fastify/view": "^8.0.0",
-    "@img/sharp-linux-x64": "^0.33.1",
+    "@cemalgnlts/mailjs": "^3.0.1",
     "@types/node": "^18.0.6",
     "axios": "^1.5.1",
     "cheerio": "^1.0.0-rc.12",
     "country-list": "^2.3.0",
     "discord-image-generation": "^1.4.25",
+    "dotenv": "^16.4.5",
     "express": "^4.18.2",
     "fastify": "^4.21.0",
     "fb-chat-api-temp": "github:ntkhang03/fb-chat-api-temp",
     "fluent-ffmpeg": "^2.1.2",
+    "form-data": "^4.0.0",
     "free-translate": "^0.6.1",
+    "g-i-s": "^2.1.7",
     "genius-lyrics": "^4.4.6",
     "google-translate": "^3.0.0",
     "google-translate-api": "^2.3.0",
     "google-tts-api": "^2.0.2",
     "gtts": "^0.2.1",
     "handlebars": "^4.7.8",
-    "hercai": "^11.0.1",
+    "hercai": "^12.1.1",
     "mathjs": "^12.0.0",
     "morse": "^0.1.0",
     "node-cron": "^3.0.3",
     "node-fetch": "^2.7.0",
     "openai": "^4.14.0",
-    "random-words": "^2.0.0",
-    "sharp": "^0.33.1",
-    "yt-search": "^2.10.4",
-    "ytdl-core": "^4.11.5",
     "pokedex": "^1.1.0",
-    "g-i-s": "^2.1.7"
-  },
-  "engines": {
-    "node": "14.x"
-  },
-  "repository": {
-    "url": "https://glitch.com/edit/#!/glitch-hello-node"
+    "profanity": "^0.0.2",
+    "random-words": "^2.0.0",
+    "rsnchat": "^3.0.9",
+    "sharp": "^0.33.1",
+    "uglify-js": "^3.17.4",
+    "uuid": "^9.0.1",
+    "ws": "^8.16.0",
+    "yt-search": "^2.10.4",
+    "ytdl-core": "^4.11.5"
   },
   "license": "MIT",
   "keywords": [
     "node",
     "glitch"
-  ]
+  ],
+  "devDependencies": {
+    "@gradio/client": "^0.13.0"
+  }
 }

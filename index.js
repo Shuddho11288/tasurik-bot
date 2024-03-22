@@ -1,173 +1,272 @@
+require('dotenv').config();
 const login = require("fb-chat-api-temp");
 
-const gtf = require("./guessthefootballer");
+const gtf = require("./cmds/guessthefootballer");
 
-const database = require("./database");
+const database = require("./cmds/database");
 
-const dig = require("./dig");
+const dig = require("./cmds/dig");
 
-console.log(process.env);
+const fs = require("fs");
 
-const appState = JSON.parse(process.env["appState"]);
+const profanity = require("./cmdsNew/profanity");
 
-const vid = require("./vid");
+
+
+console.log(JSON.parse(require("./env.json")["appState"]));
+
+const appState = [
+  {
+      "key": "sb",
+      "value": "K9YvZV_ogRvkpMSVCd0MvBTA",
+      "domain": "facebook.com",
+      "path": "/",
+      "hostOnly": false,
+      "creation": "2024-03-06T07:29:06.562Z",
+      "lastAccessed": "2024-03-06T07:29:06.562Z"
+  },
+  {
+      "key": "datr",
+      "value": "MLm0Zb4gfa3zstAEZQ9VUZMU",
+      "domain": "facebook.com",
+      "path": "/",
+      "hostOnly": false,
+      "creation": "2024-03-06T07:29:06.562Z",
+      "lastAccessed": "2024-03-06T07:29:06.562Z"
+  },
+  {
+      "key": "c_user",
+      "value": "61555957081131",
+      "domain": "facebook.com",
+      "path": "/",
+      "hostOnly": false,
+      "creation": "2024-03-06T07:29:06.562Z",
+      "lastAccessed": "2024-03-06T07:29:06.562Z"
+  },
+  {
+      "key": "ps_n",
+      "value": "0",
+      "domain": "facebook.com",
+      "path": "/",
+      "hostOnly": false,
+      "creation": "2024-03-06T07:29:06.562Z",
+      "lastAccessed": "2024-03-06T07:29:06.562Z"
+  },
+  {
+      "key": "ps_l",
+      "value": "0",
+      "domain": "facebook.com",
+      "path": "/",
+      "hostOnly": false,
+      "creation": "2024-03-06T07:29:06.562Z",
+      "lastAccessed": "2024-03-06T07:29:06.562Z"
+  },
+  {
+      "key": "xs",
+      "value": "26%3AiAHXzREIEgui0A%3A2%3A1706354148%3A-1%3A-1%3A%3AAcXO9DYlG7FYb6Kz_hqDX7qNrD1Mp_7Wa5ScsNgDqQ",
+      "domain": "facebook.com",
+      "path": "/",
+      "hostOnly": false,
+      "creation": "2024-03-06T07:29:06.562Z",
+      "lastAccessed": "2024-03-06T07:29:06.562Z"
+  },
+  {
+      "key": "fr",
+      "value": "1fjKaepEYtnkpfdY2.AWXDpkYR-xNMrKRb8J5qjc1TPcA.Bl6BsS..AAA.0.0.Bl6BsS.AWXGjFAFkao",
+      "domain": "facebook.com",
+      "path": "/",
+      "hostOnly": false,
+      "creation": "2024-03-06T07:29:06.562Z",
+      "lastAccessed": "2024-03-06T07:29:06.562Z"
+  }
+]
+
+const vid = require("./cmds/vid");
 
 var prefixes = database.getDatabase("prefix");
 
-const teach = require("./teach");
+const teach = require("./cmds/teach");
 
-const tasurik = require("./tasurik");
+const tasurik = require("./cmds/tasurik");
 
-const play = require("./play");
+const play = require("./cmds/play");
 
-const MinimalHelpCommand = require("./help");
+const MinimalHelpCommand = require("./cmds/help");
 
-const checkAdmin = require("./basicTools/checkAdmin");
+const checkAdmin = require("./cmds/basicTools/checkAdmin");
 
-const dm = require("./dm");
+const dm = require("./cmds/dm");
 
-const permit = require("./permit");
+const permit = require("./cmds/permit");
 
-const userinfo = require("./userinfo");
+const userinfo = require("./cmds/userinfo");
 
-const qa = require("./qa");
+const qa = require("./cmds/qa");
 
-const threadinfo = require("./threadinfo");
+const threadinfo = require("./cmds/threadinfo");
 
-const keepON = require("./keepON");
+const keepON = require("./cmds/keepON");
 
-const resend = require("./resend");
+const resend = require("./cmds/resend");
 
-const unsend = require("./unsend");
+const unsend = require("./cmds/unsend");
 
-const calculator = require("./calculator");
+const calculator = require("./cmds/calculator");
 
-const encoder = require("./encoder");
+const encoder = require("./cmds/encoder");
 
-const translate = require("./translate");
+const translate = require("./cmds/translate");
 
-const nsfw = require("./nsfw");
+const nsfw = require("./cmds/nsfw");
 
-const wpm = require("./wpm");
+const wpm = require("./cmds/wpm");
 
-const repans = require("./repans");
+const repans = require("./cmds/repans");
 
-const evaluate = require("./eval");
+const evaluate = require("./cmds/eval");
 
-const kick = require("./kick");
+const kick = require("./cmds/kick");
 
-const anagram = require("./anagram");
+const anagram = require("./cmds/anagram");
 
-const wordguess = require("./wordguess");
+const wordguess = require("./cmds/wordguess");
 
-const blacklister = require("./blacklist");
+const blacklister = require("./cmds/blacklist");
 
-const troll = require("./troll");
+const troll = require("./cmds/troll");
 
-const gif = require("./gif");
+const gif = require("./cmds/gif");
 
-const meme = require("./meme");
+const meme = require("./cmds/meme");
 
-const weather = require("./weather");
+const weather = require("./cmds/weather");
 
-const fact = require("./fact");
+const fact = require("./cmds/fact");
 
-const quote = require("./quote");
+const quote = require("./cmds/quote");
 
-const setNickname = require("./setNickname");
+const setNickname = require("./cmds/setNickname");
 
-const gpt = require("./gpt");
+const gpt = require("./cmds/gpt");
 
-const ai = require("./ai");
+const ai = require("./cmds/ai");
 
-const imagine = require("./imagine");
+const imagine = require("./cmds/imagine");
 
-const bard = require("./bard");
+const bard = require("./cmds/bard");
 
-const bard2 = require("./bard2");
+const bard2 = require("./cmds/bard2");
 
-const herc = require("./herc");
+const herc = require("./cmds/herc");
 
-const bored = require("./bored");
+const bored = require("./cmds/bored");
 
-const randomapi = require("./randomapi");
+const randomapi = require("./cmds/randomapi");
 
-const webss = require("./webss");
+const webss = require("./cmds/webss");
 
-const say = require("./say");
+const say = require("./cmds/say");
 
-const balance = require("./balance");
+const balance = require("./cmds/balance");
 
-const slap = require("./slap");
+const slap = require("./cmds/slap");
 
-const unsplash = require("./unsplash");
+const unsplash = require("./cmds/unsplash");
 
-const pokedex = require("./pokedex");
+const pokedex = require("./cmds/pokedex");
 
-const pokeguess = require("./pokeguess");
+const pokeguess = require("./cmds/pokeguess");
 
-const quiz = require("./quiz");
+const quiz = require("./cmds/quiz");
 
-const uid = require("./uid");
+const uid = require("./cmds/uid");
 
-const adduser = require("./adduser");
+const adduser = require("./cmds/adduser");
 
-const sim = require("./sim");
+const sim = require("./cmds/sim");
 
-const zuck = require("./zuck");
+const zuck = require("./cmds/zuck");
 
-const pfp = require("./pfp");
+const pfp = require("./cmds/pfp");
 
-const tweet = require("./tweet");
+const tweet = require("./cmds/tweet");
 
-const fbhack = require("./fbhack");
+const fbhack = require("./cmds/fbhack");
 
-const cf = require("./cricketFixtures");
+const cf = require("./cmds/cricketFixtures");
 
-const livescore = require("./livescore");
+const livescore = require("./cmds/livescore");
 
-const rainbow = require("./rainbow");
+const rainbow = require("./cmds/rainbow");
 
-const nsim = require("./nsim");
+const nsim = require("./cmds/nsim");
 
-const remini = require("./4k");
+const remini = require("./cmds/4k");
 
-const triggered = require("./triggered");
+const triggered = require("./cmds/triggered");
 
-const trash = require("./trash");
+const trash = require("./cmds/trash");
 
-const deletepic = require("./delete");
+const deletepic = require("./cmds/delete");
 
-const asciiart = require("./asciiart");
+const asciiart = require("./cmds/asciiart");
 
-const lyrics = require("./lyrics");
+const lyrics = require("./cmds/lyrics");
 
-const liner = require("./liner");
+const liner = require("./cmds/liner");
 
-const gemini = require("./gemini");
+const gemini = require("./cmds/gemini");
 
-const neko = require("./neko");
+const neko = require("./cmds/neko");
+
+const quizfootballer = require("./cmds/quizfootballer");
 
 keepON();
+
+var apila = null;
+var eventla = null;
+// check cmdsNew Folder for all handle commands
+console.log("LOADING HANDLE COMMANDS: 🔃");
+var handleCommands = [];
+
+for (const file of fs.readdirSync("./cmdsNew")) {
+  if (!file.endsWith(".js")) continue;
+  const command = require(`./cmdsNew/${file}`);
+
+  if (command.handle) {
+    handleCommands.push(command.handle);
+  }
+}
+
+console.log("LOADED HANDLE COMMANDS ✅");
 
 let apii;
 
 const startApp = () => {
   apii = login({ appState: appState }, (err, api) => {
+    apila = api;
     if (err) console.log(err);
 
     api.setOptions({ listenEvents: true });
 
     var listenEmitter = api.listenMqtt(async (err, event) => {
-      if (err) return console.log(err);
+      if (err) {
+        console.log(err);
+        process.exit();
+      }
+      
+
+      console.log(event);
 
       switch (event.type) {
         case "message":
+          eventla = event;
           const blacklisted = database.getDatabase("blacklisted");
           if (blacklisted[event.senderID] == true) {
             //api.sendMessage("You are blacklisted from using this bot. If you think it is a mistake please contact with the admin!", event.threadID, event.messageID)
             break;
           }
+
           if (sim.isSimOn(event)) {
             sim.simsimi(api, event);
           }
@@ -187,16 +286,96 @@ const startApp = () => {
 
           quiz.handle_quiz(api, event);
 
+          quizfootballer.handlefootballerquiz(api, event);
+
           resend.saveForResend(api, event);
+
+          // check all handle
+
+          handleCommands.forEach((handle) => {
+            handle(api, event);
+          });
 
           let msg = event.body;
 
           if (Object.keys(prefixes).includes(event.threadID)) {
-            msg = msg.replace(prefixes[event.threadID], "-");
+            //msg = msg.replace(prefixes[event.threadID], "-");
+            msg = msg.replace("!", "-");
           }
+
+          let args = event.body.split(" ").slice(1);
+
+
+            let data = await profanity.check_profanity(msg)
+            if (data.isProfane) {
+              if (!nsfw.checkNSFW(api, event)){
+                console.log(data)
+                api.sendMessage('⚠️ Profanity Detected! Please do not use those words in the chat! And I will also not execute your command for this!', event.threadID, event.messageID)
+                return
+              }
+
+            }
+          
+
+
           console.log(msg);
           if (msg.startsWith("-vid")) {
             vid.vid(api, event);
+          } else if (
+            fs.existsSync(
+              __dirname +
+                "/cmdsNew/" +
+                msg.split(" ")[0].replace("-", "") +
+                ".js"
+            ) &&
+            msg.startsWith("-")
+          ) {
+            if (
+              require(__dirname +
+                "/cmdsNew/" +
+                msg.split(" ")[0].replace("-", "") +
+                ".js").config.permission == "all"
+            ) {
+              require(__dirname +
+                "/cmdsNew/" +
+                msg.split(" ")[0].replace("-", "") +
+                ".js").run(api, event, args);
+            } else if (
+              require(__dirname +
+                "/cmdsNew/" +
+                msg.split(" ")[0].replace("-", "") +
+                ".js").config.permission == "grpadmin"
+            ) {
+              if (await checkAdmin.isGrpAdmin(api, event)) {
+                require(__dirname +
+                  "/cmdsNew/" +
+                  msg.split(" ")[0].replace("-", "") +
+                  ".js").run(api, event, args);
+              } else {
+                api.sendMessage(
+                  "Sorry! The command can only be invoked by the Group Admins!",
+                  event.threadID
+                );
+              }
+            } else if (
+              require(__dirname +
+                "/cmdsNew/" +
+                msg.split(" ")[0].replace("-", "") +
+                ".js").config.permission == "admin"
+            ) {
+              if (checkAdmin.isAdmin(event.senderID)) {
+                require(__dirname +
+                  "/cmdsNew/" +
+                  msg.split(" ")[0].replace("-", "") +
+                  ".js").run(api, event, args);
+              } else {
+                api.sendMessage(
+                  "Sorry! The command can only be invoked by the Bot Admins!",
+                  event.threadID,
+                  event.messageID
+                );
+              }
+            }
           } else if (msg.startsWith("-gpt4")) {
             herc.gpt4(api, event);
           } else if (msg.startsWith("-gpt")) {
@@ -229,6 +408,8 @@ const startApp = () => {
             gtf.gtfleaderboard(api, event);
           } else if (msg.startsWith("-gtf")) {
             gtf.guessFootballer(api, event);
+          } else if (msg.startsWith("-quizfootballer")) {
+            quizfootballer.quizfootballer(api, event);
           } else if (msg.startsWith("-bard")) {
             bard2.bard(api, event);
             //api.sendMessage("This feature is currently disabled.", event.threadID, event.messageID)
@@ -476,7 +657,7 @@ const startApp = () => {
           } else if (msg == "-cry") {
             neko.cry(api, event);
           } else if (msg.startsWith("-botoff")) {
-            require("./botoff").botoff(api, event);
+            require("./cmds/botoff").botoff(api, event);
           } else if (msg == "-pout") {
             neko.pout(api, event);
           } else if (msg == "-handhold") {
@@ -696,13 +877,50 @@ const startApp = () => {
           }
 
           //END OF THE LISTENING PART!
+          // check ./cmdsNew file and use loop to get if any of them matches the alias
           else if (msg.startsWith("-")) {
+            let done = false
+            let cmd = msg.split(" ")[0];
+            fs.readdir("./cmdsNew", (err, files) => {
+              if (err) {
+                throw err
+              }
+              files.forEach(async (file) => {
+                if (file.endsWith(".js")) {
+                  let command = require(`./cmdsNew/${file}`);
+                  if (!command.config.alias) {
+                    return
+                  }
+                  if (command.config.alias.split("|").includes(cmd.replace('-', ''))) {
+                    done = true
+                    let permit = command.config.permission;
+                    if (permit == "admin" && !checkAdmin.isAdmin(event.senderID)) {
+                      api.sendMessage("Sorry! The command can only be invoked by the bot admin!", event.threadID)
+                    }
+                    else if (permit == "group" && await checkAdmin.isGrpAdmin(api, event)) {
+                      api.sendMessage("Sorry! The command can only be invoked by the group admin!", event.threadID)
+                      
+                    }
+                    else{
+                      command.run(api, event, args);
+                    }
+               
+                  }
+                }
+              })
+              if (!done) {
+                          //END OF THE LISTENING PART!
+
             api.sendMessage(
               "Command: " +
                 event.body.split(" ")[0] +
                 " Not Found! Please use -help for all commands!",
               event.threadID
             );
+          
+              }
+            })
+
           } else {
             console.log(msg);
           }
@@ -712,23 +930,36 @@ const startApp = () => {
           resend.saveForResend(api, event);
 
           let rmsg = event.body;
+          let message = event.body;
+          let arguments = message.split(" ").slice(1);
+          let command = message.split(" ")[0].replace();
+          command = command.substring(1)
+
 
           if (Object.keys(prefixes).includes(event.threadID)) {
             rmsg = rmsg.replace(prefixes[event.threadID], "-");
+            
           }
 
           vid.handlevid(api, event);
           play.handleplay(api, event);
+           if (fs.existsSync(`./cmdsNew/${command}.js`)) {
+            if (require(`./cmdsNew/${command}.js`).config.isReplyCommand == true)  {
+              require(`./cmdsNew/${command}.js`).run(api, event, arguments);
+              
+            }
+            
+
+          }
 
           if (rmsg == "-unsend") {
             unsend.unsend(api, event);
           } else if (rmsg.startsWith("-tasurik")) {
             tasurik.tasurik(api, event);
-          } else if (rmsg == "-uid") {
+          } 
+          else if (rmsg == "-uid") {
             uid.uid(api, event);
-          } else if (rmsg.startsWith("-4k")) {
-            remini.remini(api, event);
-          } else if (rmsg.startsWith("-asciiart")) {
+          }  else if (rmsg.startsWith("-asciiart")) {
             asciiart.asciiart(api, event);
           }
           if (sim.isSimOn(event)) {
@@ -753,7 +984,73 @@ const startApp = () => {
 };
 
 const handleErrors = (error) => {
-  console.log("Error occurred:", error);
+  console.error("Error occurred:", error); // Using console.error for clarity
+
+  // Log the error details to the console
+  console.log("Error details:", error.stack || error.message || error);
+
+  // Send error messages using api.sendMessage if available
+  if (apila && apila.sendMessage) {
+    let errorMessage = `
+      An error occurred ❌:\n
+      Error Name: ${error.name || "Unknown"}\n
+      Error Message: ${error.message || "No message provided"}\n
+      Stack Trace: ${error.stack || "No stack trace available"}
+    `;
+
+    // Extract additional details based on error type
+    if (error.isAxiosError) {
+      // Axios error
+      errorMessage += `
+        Axios Error Details:
+         - Request: ${error.config.method.toUpperCase()}
+        - Status: ${error.response ? error.response.status : "N/A"}
+        - Data: ${error.response ? JSON.stringify(error.response.data) : "N/A"}
+
+      `;
+    } else if (error instanceof Error) {
+      // Standard Error object
+      errorMessage += `
+        Error Details:
+        - Name: ${error.name || "N/A"}
+        - Message: ${error.message || "N/A"}
+      `;
+    } else if (typeof error === "object") {
+      // Other types of objects
+      errorMessage += `
+        Object Details:
+        - Type: ${typeof error}
+        - Object: ${JSON.stringify(error)}
+      `;
+    } else {
+      // Other types of errors or values
+      errorMessage += `
+        Unknown Error Details:
+        - Type: ${typeof error}
+        - Value: ${error}
+      `;
+    }
+
+    console.log(errorMessage);
+    errorMessage = errorMessage.split(".").join("•");
+    errorMessage+='If you want to report this error, please contact the developer: Tasawar Ahmed Shuddho.\nHis Facebook id: https://www.facebook.com/profile.php?id=100088054962292'
+
+
+    // Send error message
+    apila
+      .sendMessage(errorMessage, "6997238410394984")
+      .then(() => console.log("Error message sent successfully"))
+      .catch((err) => console.error("Error sending message:", err));
+
+    // Optionally, send error message to specific thread
+    if (eventla!=null) {
+      apila
+        .sendMessage(errorMessage, eventla.threadID, eventla.messageID)
+        
+       
+    }
+  }
+
   // Additional error handling logic can be added here
 };
 
@@ -779,10 +1076,7 @@ process.on("uncaughtException", (error) => {
 });
 
 process.on("unhandledRejection", (reason, promise) => {
-  const error = new Error(
-    `Unhandled Rejection at: ${promise}. Reason: ${reason}`
-  );
-  handleErrors(error);
+  handleErrors(reason);
 });
 
 // Restart the application every hour
