@@ -1,7 +1,7 @@
 {
   "nsfw": {
     "6541503069231652": true,
-    "4724430844320617": false,
+    "4724430844320617": true,
     "100088054962292": true,
     "24339220438994649": true,
     "100055384607854": true,
@@ -11,27 +11,94 @@
     "100052404497447": true,
     "5595649523893130": true,
     "6818946311568408": true,
-    "7185815944810946": false,
+    "7185815944810946": true,
     "6825620830855783": true,
     "6959696734052830": true,
     "7307607585957628": true,
-    "100024839116380": true
+    "100024839116380": true,
+    "7089309484480864": true,
+    "24895693450074104": true
   },
   "messages": {
-    "mid.$gABmHdibP0cKTgNg7DGNT5LxhDKY5": "-resend",
-    "mid.$gABmHdibP0cKUFa6w7mN5GlnoOJio": "turned resend ON for this thread",
-    "mid.$gABmHdibP0cKUFa7DFGN5Gl6E5J8k": "Legendra bujhbe bakira khujbe",
-    "mid.$gABmHdibP0cKUFa7ZOWN5GmO40jfz": "",
-    "mid.$gABmHdibP0cKUFa7zfGN5GmrMWgld": "Message unsent by Tasawar Ahmed Shuddho\nContent:",
-    "mid.$gABmHdibP0cKUFa739mN5Gms0iP-6": "Here are your images",
-    "mid.$gABmHdibP0cKUFa8sK2N5GnoXhj4d": "yesss boiiiiiiii",
-    "mid.$gABmHdibP0cKUFa817GN5GnyRNM8_": "lless goooooooo",
-    "mid.$gABmHdibP0cKUFa9PG2N5GoGCqz6J": "sohobash boiragi wasindu bumped their message",
-    "mid.$gABmHdibP0cKUFbFHemN5GwDmVUGu": "Dhaka shera dol",
-    "mid.$gABmHdibP0cKUFbGRbmN5GxIZY_M6": "Brown gone",
-    "mid.$gABmHdibP0cKUFbGksGN5GxbrcOnA": "😇",
-    "mid.$gABmHdibP0cKUFbHyo2N5Gyn1yKWs": "https://github.com/public-api-lists/public-api-lists",
-    "mid.$gABmHdibP0cKUFbIBT2N5Gy9Nzac3": "-resend"
+    "mid.$gABmHdibP0cKUXzbXWWOLfGK_5m2G": "-resend",
+    "mid.$cAABs_KsTILiUbrfzI2OPXKSJnCKt": "",
+    "mid.$cAABs_KsTILiUcWa2vGOQCFs47Rdd": "-",
+    "mid.$gABkvsH2GeWCUfdwiSGOTJbXxrXIT": ".",
+    "mid.$gABkvsH2GeWCUfd9hS2OTJoXZD6Js": "-",
+    "mid.$gABkvsH2GeWCUfd9_3WOTJo2FrnT9": "Kmn aso tumi",
+    "mid.$gABkvsH2GeWCUfeALXWOTJrBmrMKE": "🙂",
+    "mid.$gABkvsH2GeWCUfeB04mOTJsrACStu": "-unsend",
+    "mid.$gABkvsH2GeWCUfeDMj2OTJuCvi8yo": "Vallagtesena kisu 🙂",
+    "mid.$gABkvsH2GeWCUfeEUmGOTJvKuj-sL": "Mone cacche ki je korte🙂",
+    "mid.$gABkvsH2GeWCUfeHktGOTJya2c1hC": "-sim on",
+    "mid.$gABkvsH2GeWCUfeIaq2OTJzQzX6ij": ".",
+    "mid.$gABkvsH2GeWCUfeJRGGOTJ0GpGR-k": ".......",
+    "mid.$gABkvsH2GeWCUfeJh6GOTJ0P7xKxb": ".......",
+    "mid.$gABkvsH2GeWCUfeJiTmOTJ0TuiwHQ": "...",
+    "mid.$gABkvsH2GeWCUfeJi3mOTJ0XF2nV4": "...",
+    "mid.$gABkvsH2GeWCUfeJltmOTJ0ZC6I2R": ".",
+    "mid.$gABkvsH2GeWCUfeJqTGOTJ0gRQ31e": "...",
+    "mid.$gABkvsH2GeWCUfeJulWOTJ0iSYmXy": ".",
+    "mid.$gABkvsH2GeWCUfeJ2cWOTJ0srWgwp": "........",
+    "mid.$gABkvsH2GeWCUfeJ7dGOTJ0w0y_6m": "....",
+    "mid.$gABkvsH2GeWCUfeJ_1GOTJ00xsZ9F": "....",
+    "mid.$gABkvsH2GeWCUfeKCgGOTJ04zPbYa": "....",
+    "mid.$gABkvsH2GeWCUfeKIJ2OTJ09CfqYz": "....",
+    "mid.$gABkvsH2GeWCUfeKL9mOTJ1Bt6l28": ".....",
+    "mid.$gABkvsH2GeWCUfeKSz2OTJ1GJS9xp": "....",
+    "mid.$gABkvsH2GeWCUfeKWpWOTJ1JeDcFF": ".",
+    "mid.$gABkvsH2GeWCUfeKZN2OTJ1MtyJtM": "..",
+    "mid.$gABkvsH2GeWCUfeKZmGOTJ1Onbbek": ".",
+    "mid.$gABkvsH2GeWCUfeKbr2OTJ1RWBqn3": ".",
+    "mid.$gABkvsH2GeWCUfeK0N2OTJ1qb1weN": "........",
+    "mid.$gABkvsH2GeWCUfeK5dGOTJ1vlYJKq": "....",
+    "mid.$gABkvsH2GeWCUfeK-bWOTJ1zuNkPv": "....",
+    "mid.$gABkvsH2GeWCUfeLBbWOTJ13sZTKu": "...",
+    "mid.$gABkvsH2GeWCUfeLGNmOTJ18KF7fX": "",
+    "mid.$gABkvsH2GeWCUfeMVS2OTJ2lQpz1W": ".....",
+    "mid.$gABkvsH2GeWCUfeMjMGOTJ2vjUCB6": "....",
+    "mid.$gABkvsH2GeWCUfeMjpWOTJ24NYNt_": "..",
+    "mid.$gABkvsH2GeWCUfeMj_GOTJ29fWhaT": "....",
+    "mid.$gABkvsH2GeWCUfeMkV2OTJ3Bphl2R": "...",
+    "mid.$gABkvsH2GeWCUfeMtrWOTJ3GMkKfr": "...",
+    "mid.$gABkvsH2GeWCUfeMuDGOTJ3K3JAuz": "...",
+    "mid.$gABkvsH2GeWCUfeMuaGOTJ3TeT2xQ": ".......",
+    "mid.$gABkvsH2GeWCUfeNZ22OTJ4QHN879": ".........",
+    "mid.$gABkvsH2GeWCUfeOk3GOTJ5bBSSCr": ".....",
+    "mid.$gABkvsH2GeWCUfeOpJmOTJ5fXnkAA": "...",
+    "mid.$gABkvsH2GeWCUfeOuDmOTJ5jaY3ZB": "...",
+    "mid.$gABkvsH2GeWCUfeOyKWOTJ5nk0TC_": "...",
+    "mid.$gABkvsH2GeWCUfeO6xmOTJ5u7gln7": "........",
+    "mid.$gABkvsH2GeWCUfeO9wWOTJ5zBQSKh": "...",
+    "mid.$gABkvsH2GeWCUfePBlGOTJ53P0_tY": "...",
+    "mid.$gABkvsH2GeWCUfePGIGOTJ57eeadS": "",
+    "mid.$gABkvsH2GeWCUfePfB2OTJ6VN8BM6": ".....",
+    "mid.$gABkvsH2GeWCUfePtLmOTJ6jXqIdW": ".................",
+    "mid.$gABkvsH2GeWCUfePy9WOTJ6pM0hC4": "....",
+    "mid.$gABkvsH2GeWCUfeP4r2OTJ6uwO55J": ".....",
+    "mid.$gABkvsH2GeWCUfeP9TWOTJ6zVgiOp": "....",
+    "mid.$gABkvsH2GeWCUfeQBwmOTJ63-idzh": "....",
+    "mid.$gABkvsH2GeWCUfeQGaWOTJ68eFjSl": "..",
+    "mid.$gABkvsH2GeWCUffInSGOTKzclnvcO": ".....",
+    "mid.$gABkvsH2GeWCUffIpy2OTKzf1clhw": "...",
+    "mid.$gABkvsH2GeWCUffIt-GOTKzjFEThW": "...",
+    "mid.$gABkvsH2GeWCUffIzamOTKzpgJf7K": "........",
+    "mid.$gABkvsH2GeWCUffI4VWOTKzuF6mPl": ".....",
+    "mid.$gABkvsH2GeWCUffI8HWOTKzyaO2S6": "....",
+    "mid.$gABkvsH2GeWCUffJAb2OTKz2Rho9b": "....",
+    "mid.$gABkvsH2GeWCUffJFFWOTKz6YVPuz": "....",
+    "mid.$gABkvsH2GeWCUffJIyGOTKz-vQJoX": "....",
+    "mid.$gABkvsH2GeWCUffJNg2OTK0DXqPiA": ".....",
+    "mid.$gABkvsH2GeWCUffJTAGOTK0JM2hHV": "......",
+    "mid.$gABkvsH2GeWCUffJgC2OTK0WLkvh4": ".............",
+    "mid.$gABkvsH2GeWCUffJpqWOTK0fvY_v2": "...........",
+    "mid.$gABkvsH2GeWCUffJvZ2OTK0lmdVHv": "......",
+    "mid.$gABkvsH2GeWCUffJ0MWOTK0o_xBEB": "...",
+    "mid.$gABkvsH2GeWCUffJ4yWOTK0vCemQJ": "....",
+    "mid.$gABkvsH2GeWCUffKDOGOTK04r2ATu": ".",
+    "mid.$gABkvsH2GeWCUfgt8FWOTMYyUxuKP": "Vai koiiiiiiiiiiii",
+    "mid.$gABkvsH2GeWCUfguNA2OTMZDTQF4h": "Somossa kkiiiiiiii",
+    "mid.$cAABs_KsTILiUh_qAq2OVrUx-PDP1": "-webss https://hallohelp.com/img/Listofpolicestation%20.pdf"
   },
   "resend": {
     "6541503069231652": false,
@@ -39,7 +106,10 @@
     "5230274790349100": false,
     "6825620830855783": false,
     "7185815944810946": false,
-    "5595649523893130": false
+    "5595649523893130": false,
+    "7089309484480864": true,
+    "7307607585957628": false,
+    "100088054962292": true
   },
   "permissionsForTeach": {
     "100049299255683": true,
@@ -215,7 +285,13 @@
     "gali de": "চুদি, মদন, হাবলা, কেবলা,\nহাব্ব্র , বদ, বদমাইশ, লম্পট, পাগলার বাচ্চা,\nটিক টিকির ডিম, মুরগীর বাচ্চা, মুরগীর পুৎ,\nহালার পুৎ হালা, শালার বাচ্চা, ননসেন্স,\nইডিয়ট, স্টুপিড, বাস্টার্ড, ফাকার, ফকির,\nকুত্তা, কুত্তার বাচ্চা, শুয়োর, শুয়োরের\nবাচ্চা,হারামজাদা হারামি, কালপেট লাটু\nলাটাই,হাওয়া, হাওয়ার পো, মগা, হাঁদা,\nহাঁদারাম, পাগলাবাই, পামুস ,তুমুস, হামুস,\nমামুস, চুদমারানি, চোদনা, চোদনখোর,\nচোদোন খাইয়ে, হারামখোর, মাগি জাতির\nপুৎ,তোর মায়রে,বাল, বালের\nবাচ্চা,পোদমারানি, পোদখোর,জাওরা,\nজাওরার পো, বেশ্যার বাচ্চা বেশ্যা, নটি\nমটর পো, খানকি, খানকি মাগি,\nচুদমারানি,মান্দার পো, হুগার পো,বান্দি,\nবান্দির পো, চুদি,চুদিরভাই, মাদারচোদ,\nফাদারচোদ, চুদানিরপো, পুকচুদ",
     "gali de koyekta": "মাদারচোদ........ বোকাচোদা, খানকির ছেলে, গুদ মারানি, পোড মারানি, রেন্ডির ছেলে , বিচির বাল গুদের ছাল......... খোয়া চোদা , বাইনচোদ ,  বেশ্যা মাগী, কুত্তাচোদা , হাতি চোদা , ডাইনোসর চোদা, এঙ্গেল চোদা , ভাইরাস চোদা , উৎখানকির ডিম, পেন্টি চোর , কনডম চোর, গুদির ছেলে , ট্রফিক্যাল চোদা, চালক চোদা , টেপন মাগীর , রেন্ডি মাগীর গুদ............. ডিজিটাল খানকি চোদন  পাগলা চোদা  হোমো চোদা, পাডা........ গুনিয়ার  গার পাকা বারা চোদা ভরা চোদা , গুদ চোর.... খা মাগীর গুদ চেটে ফেল দুধ ........এই মাংগের বেটা তোর মারে চুদি \nউঠতে চুদি \nবইতে চুদি \nদারাই চুদি \nবসে চুদি \nরাস্তায় চুদি \nরাস্তার ধারে চুদি \nচুদি আর চুদি খানকির পোলা\n\n-ডাইনে চুদি 🖕\n-বামে চুদি 🖕\n-উপ্রে চুদি 🖕\n-নিচে চুদি 🖕\n-সাম্নে চুদি 🖕\n-পিছে চুদি 🖕\n-হালাইয়া চুদি 🖕\n-উডাইয়া চুদি🖕\n- গুরাইয়া চুদি 🖕\n-খালে চুদি 🖕\n-বিলে চুদি 🖕\n-জাইতে চুদি 🖕\n-আইতে চুদি🖕\n-দিনে চুদি 🖕\n-রাইতে চুদি 🖕\n-খারাইয়া চুদি 🖕\n-বইয়া চুদি🖕\n-ঘরে চুদি 🖕\n-বাইরে চুদি🖕\n-সকালে চুদি🖕\n-বিকালে চুদি 🖕\n-সিতে চুদি 🖕\n-গরমে চুদি 🖕\n-গাড়িতে চুদি 🖕\n-বাড়িতে চুদি🖕\n-আকাসে চুদি 🖕\n-বাতাসে চুদি 🖕\nযামু সুন্দর বন 😁 নিয়া আমু হাতির ধন 😁\nআইনা তর মারে উপ্তা কইরা দিমু কঠিন এক চোদন, কলা গাছে কলা নাই, তর মারে চুদলে কোন মজা নাই 😭😭 কচুর লতি দেখতে সাদা, তর বইনেরে চুদতে অনেক মজা 😆 কাঠাল গাছের গোড়া আর আম গাছের ছাল, তর মারে চুইদ্দা করমু আমি খাল 🖕হাতি চোদে দাড়াইয়া,বানর চোদে ডালে, ডেলি রাইতে তর মারে চুদি আমি খালে, বৃষ্টি পরে টাপুর টুপুর তর মারে চুইদ্দা দিমু আমি সোনার নুপুর, এবারে এই ঈদের রাতে তর মারে উপ্তা কইরা কঠিন এক চোদন দিমু আমগো বাড়ীর ছাদে",
     "gali de vai": "বেজন্মা,মাদারচোদ,খানকির পোলা,মাগির ছেলে,শয়তান, অসভ্য, ফাজিল,নোংরা, ইতর,অভদ্র, বেয়াদব, বেঈমান, মুনাফেক, কাফের,মুফিজ , মুফিকার, আতেল, কুত্তা, ঘাঘু,চাংগা মাংগী,কিপটা,ফকির ফকিরনি, দুষ্টু, বুদাই, মিছকা শয়তান, আকাশের লাও, শালা,পুটকি চুদি, মদন, হাবলা, কেবলা, হাব্ব্র , বদ, বদমাইশ, লম্পট, পাগলার বাচ্চা, টিক টিকির ডিম, মুরগীর বাচ্চা, মুরগীর পুৎ, হালার পুৎ হালা, শালার বাচ্চা, ননসেন্স, ইডিয়ট, স্টুপিড, বাস্টার্ড, ফাকার, ফকির, কুত্তা, কুত্তার বাচ্চা, শুয়োর, শুয়োরের বাচ্চা,হারামজাদ া হারামি, কালপেট লাটু লাটাই,হাওয়া, হাওয়ার পো, মগা, হাঁদা, হাঁদারাম, পাগলাবাই, পামুস ,তুমুস, হামুস, মামুস, চুদমারানি, চোদনা, চোদনখোর, চোদোন খাইয়ে, হারামখোর, মাগি জাতির পুৎ,তোর মায়রে,বাল, বালের বাচ্চা,পোদমারানি, পোদখোর,জাওরা, জাওরার পো, বেশ্যার বাচ্চা বেশ্যা, নটি মটর পো, খানকি, খানকি মাগি,চুদমারানি,মান্দার পো, হুগার পো,বান্দি, বান্দির পো, চুদি,চুদিরভাই, মাদারচোদ, ফাদারচোদ, চুদানিরপো, পুকচুদ ভুদামারানি,রেন্ডি, হাওয়া চুদা, রেন্ডিচুদা, খানকিরপো,মাদমারানির পো, গুয়ার পো, নর্তকির পোলা চ্যাটের বাল, হরির পোলা ঘোরার বাল, আদাচোদা, মাতা চোদা, মুরগী চোদা, বেজী চোদা, কাউয়ার পুটকা ভেরা চুদা,চুদির বাল,খানকির পোলা, ভুদার মাগি, পুটকি চোদা, ধনের পো, চুদনা কাটি,মারানির পোলা পুংগার বাচ্চা,শালা চুদানির,শালা চুদানির মাদ মারানির মাদ্মারানি, তোর মায়রে চুদি নাস্তিক্যার বাচ্চা.....নিমজ্যারু, কাঠজ্যারু, তক্তাজ্যা রু, বেগুনজ্যারু,অালুজ্যারু, বদনাজ্যারু, টিস্যুজ্যারু, অাবালচুদি দি, মাদারচোদ, ফাদারচোদ, দাদাচোদ, দাদীচোদ ,মাসি চোদ, পিসিচোদ, দিদিমাচোদ, ঠাম্মাচোদ,, ফুফুচোদ, ফুফাচোদ,বিড়ালচোদ, কুকুরচোদ, ছাগলচোদ,, সিস্টারচোদ, ব্রাদারচোদ ,জারজ, বেজন্মা",
-    "@Afnan Saif ke?": "ekta baka chele. Khali pokemon dekhe. Ektaro thik moto name spelling pare na... Dekte topper...."
+    "@Afnan Saif ke?": "ekta baka chele. Khali pokemon dekhe. Ektaro thik moto name spelling pare na... Dekte topper....",
+    "Rangpur kemon?": "asto magi...ek bepshayir upor nirvor kore...",
+    "💚": "💚",
+    "ekta gali de": "বেজন্মা,মাদারচোদ,খানকির পোলা,মাগির ছেলে,শয়তান, অসভ্য, ফাজিল,নোংরা, ইতর,অভদ্র, বেয়াদব, বেঈমান, মুনাফেক, কাফের,মুফিজ , মুফিকার, আতেল, কুত্তা, ঘাঘু,চাংগা মাংগী,কিপটা,ফকির ফকিরনি, দুষ্টু, বুদাই, মিছকা শয়তান, আকাশের লাও, শালা,পুটকি চুদি, মদন, হাবলা, কেবলা, হাব্ব্র , বদ, বদমাইশ, লম্পট, পাগলার বাচ্চা, টিক টিকির ডিম, মুরগীর বাচ্চা, মুরগীর পুৎ, হালার পুৎ হালা, শালার বাচ্চা, ননসেন্স, ইডিয়ট, স্টুপিড, বাস্টার্ড, ফাকার, ফকির, কুত্তা, কুত্তার বাচ্চা, শুয়োর, শুয়োরের বাচ্চা,হারামজাদ া হারামি, কালপেট লাটু লাটাই,হাওয়া, হাওয়ার পো, মগা, হাঁদা, হাঁদারাম, পাগলাবাই, পামুস ,তুমুস, হামুস, মামুস, চুদমারানি, চোদনা, চোদনখোর, চোদোন খাইয়ে, হারামখোর, মাগি জাতির পুৎ,তোর মায়রে,বাল, বালের বাচ্চা,পোদমারানি, পোদখোর,জাওরা, জাওরার পো, বেশ্যার বাচ্চা বেশ্যা, নটি মটর পো, খানকি, খানকি মাগি,চুদমারানি,মান্দার পো, হুগার পো,বান্দি, বান্দির পো, চুদি,চুদিরভাই, মাদারচোদ, ফাদারচোদ, চুদানিরপো, পুকচুদ ভুদামারানি,রেন্ডি, হাওয়া চুদা, রেন্ডিচুদা, খানকিরপো,মাদমারানির পো, গুয়ার পো, নর্তকির পোলা চ্যাটের বাল, হরির পোলা ঘোরার বাল, আদাচোদা, মাতা চোদা, মুরগী চোদা, বেজী চোদা, কাউয়ার পুটকা ভেরা চুদা,চুদির বাল,খানকির পোলা, ভুদার মাগি, পুটকি চোদা, ধনের পো, চুদনা কাটি,মারানির পোলা পুংগার বাচ্চা,শালা চুদানির,শালা চুদানির মাদ মারানির মাদ্মারানি, তোর মায়রে চুদি নাস্তিক্যার বাচ্চা.....নিমজ্যারু, কাঠজ্যারু, তক্তাজ্যা রু, বেগুনজ্যারু,অালুজ্যারু, বদনাজ্যারু, টিস্যুজ্যারু, অাবালচুদি দি, মাদারচোদ, ফাদারচোদ, দাদাচোদ, দাদীচোদ ,মাসি চোদ, পিসিচোদ, দিদিমাচোদ, ঠাম্মাচোদ,, ফুফুচোদ, ফুফাচোদ,বিড়ালচোদ, কুকুরচোদ, ছাগলচোদ,, সিস্টারচোদ, ব্রাদারচোদ ,জারজ, বেজন্মা",
+    "kisu gali de": "abalchoda\n bolodchoda randichoda bokachoda bhushkir nati chutmarani khankichoda 14 bhatari petnichoda faporchoda magichoda bessha magi chutmrani noti kuttachoda goruchoda nolachoda haramjada chusnichoda harbalchoda abalchoda\n murkhochoda bilaichoda banorchoda budachoda hutmarani condomchoda chutmaranichoda shuorchoda dinosourechoda angelchoda horinchoda meleriachoda denguchoda telapukachoda shorishar tel choda hangorchoda kumirchoda bengchoda zebrachoda jouno pollir dalal bokachoda condomchor jutachor faporbaj madarchopra magibaj octopus choda alienchoda mohishchoda banchod madarchod sagolchoda modonchoda hatichoda ganduchoda haramjada bsdk madarchod foringchoda masichoda analchoda bdsmchoda gangbangchoda orgasmchoda gaychoda lesbianchoda gondarchoda doittochoda danobchoda motuchoda shemalechoda gudmarani pudmarani hedamarani hedachoda randi marani nodichoda chilchoda moynachoda ghughuchoda duyelchoda shalikchoda kawwachoda bherachoda buirachoda shawwachoda kanchoda jondischoda opodhartochoda beyadobchoda mastanchoda idurchoda badurchoda pechachoda gutibajchoda barachoda pentharchoda gutibajchoda ganjachoda😑 abalchoda\n bolodchoda randichoda bokachoda bhushkir nati chutmarani khankichoda 14 bhatari petnichoda faporchoda magichoda bessha magi chutmrani noti kuttachoda goruchoda nolachoda haramjada chusnichoda harbalchoda abalchoda\n murkhochoda bilaichoda banorchoda budachoda hutmarani condomchoda chutmaranichoda shuorchoda dinosourechoda angelchoda horinchoda meleriachoda denguchoda telapukachoda shorishar tel choda hangorchoda kumirchoda bengchoda zebrachoda jouno pollir dalal bokachoda condomchor jutachor faporbaj madarchopra magibaj octopus choda alienchoda mohishchoda banchod madarchod sagolchoda modonchoda hatichoda ganduchoda haramjada bsdk madarchod foringchoda masichoda analchoda bdsmchoda gangbangchoda orgasmchoda gaychoda lesbianchoda gondarchoda doittochoda danobchoda motuchoda shemalechoda gudmarani pudmarani hedamarani hedachoda randi marani nodichoda chilch abalchoda\n bolodchoda randichoda bokachoda bhushkir nati chutmarani khankichoda 14 bhatari petnichoda faporchoda magichoda bessha magi chutmrani noti kuttachoda goruchoda nolachoda haramjada chusnichoda harbalchoda abalchoda\n murkhochoda bilaichoda banorchoda budachoda hutmarani condomchoda chutmaranichoda shuorchoda dinosourechoda angelchoda horinchoda meleriachoda denguchoda telapukachoda shorishar tel choda hangorchoda kumirchoda bengchoda zebrachoda jouno pollir dalal bokachoda condomchor jutachor faporbaj madarchopra magibaj octopus choda alienchoda mohishchoda banchod madarchod sagolchoda modonchoda hatichoda ganduchoda haramjada bsdk madarchod foringchoda masichoda analchoda bdsmchoda gangbangchoda orgasmchoda gaychoda lesbianchoda gondarchoda doittochoda danobchoda motuchoda shemalechoda gudmarani pudmarani hedamarani hedachoda randi marani nodichoda chilchoda moynachoda ghughuchoda duyelchoda shalikchoda kawwachoda bherachoda buirachoda shawwachoda kanchoda jondischoda opodhartochoda beyadobchoda mastanchoda idurchoda badurchoda pechachoda gutibajchoda barachoda pentharchoda gutibajchoda ganjachoda😑 abalchoda\n bolodchoda randichoda bokachoda bhushkir nati chutmarani khankichoda 14 bhatari petnichoda faporchoda magichoda bessha magi chutmrani noti kuttachoda goruchoda nolachoda haramjada chusnichoda harbalchoda abalchoda\n murkhochoda bilaichoda banorchoda budachoda hutmarani condomchoda chutmaranichoda shuorchoda dinosourechoda angelchoda horinchoda meleriachoda denguchoda telapukachoda shorishar tel choda hangorchoda kumirchoda bengchoda zebrachoda jouno pollir dalal bokachoda condomchor jutachor faporbaj madarchopra magibaj octopus choda alienchoda mohishchoda banchod madarchod sagolchoda modonchoda hatichoda ganduchoda haramjada bsdk madarchod foringchoda masichoda analchoda bdsmchoda gangbangchoda orgasmchoda gaychoda lesbianchoda gondarchoda doittochoda danobchoda motuchoda shemalechoda gudmarani pudmarani hedamarani hedachoda randi marani nodichoda chilch h abalchoda\n bolodchoda randichoda bokachoda bhushkir nati chutmarani khankichoda 14 bhatari petnichoda faporchoda magichoda bessha magi chutmrani noti kuttachoda goruchoda nolachoda haramjada chusnichoda harbalchoda abalchoda\n murkhochoda bilaichoda banorchoda budachoda hutmarani condomchoda chutmaranichoda shuorchoda dinosourechoda angelchoda horinchoda meleriachoda denguchoda telapukachoda shorishar tel choda hangorchoda kumirchoda bengchoda zebrachoda jouno pollir dalal bokachoda condomchor jutachor faporbaj madarchopra magibaj octopus choda alienchoda mohishchoda banchod madarchod sagolchoda modonchoda hatichoda ganduchoda haramjada bsdk madarchod foringchoda masichoda analchoda bdsmchoda gangbangchoda orgasmchoda gaychoda lesbianchoda gondarchoda doittochoda danobchoda motuchoda shemalechoda gudmarani pudmarani hedamarani hedachoda randi marani nodichoda chilchoda moynachoda ghughuchoda duyelchoda shalikchoda kawwachoda bherachoda buirachoda shawwachoda kanchoda jondischoda opodh",
+    "ayon ke gali de": "চুদি, মদন, হাবলা, কেবলা,\nহাব্ব্র , বদ, বদমাইশ, লম্পট, পাগলার বাচ্চা,\nটিক টিকির ডিম, মুরগীর বাচ্চা, মুরগীর পুৎ,\nহালার পুৎ হালা, শালার বাচ্চা, ননসেন্স,\nইডিয়ট, স্টুপিড, বাস্টার্ড, ফাকার, ফকির,\nকুত্তা, কুত্তার বাচ্চা, শুয়োর, শুয়োরের\nবাচ্চা,হারামজাদা হারামি, কালপেট লাটু\nলাটাই,হাওয়া, হাওয়ার পো, মগা, হাঁদা,\nহাঁদারাম, পাগলাবাই, পামুস ,তুমুস, হামুস,\nমামুস, চুদমারানি, চোদনা, চোদনখোর,\nচোদোন খাইয়ে, হারামখোর, মাগি জাতির\nপুৎ,তোর মায়রে,বাল, বালের\nবাচ্চা,পোদমারানি, পোদখোর,জাওরা,\nজাওরার পো, বেশ্যার বাচ্চা বেশ্যা, নটি\nমটর পো, খানকি, খানকি মাগি,\nচুদমারানি,মান্দার পো, হুগার পো,বান্দি,\nবান্দির পো, চুদি,চুদিরভাই, মাদারচোদ,\nফাদারচোদ, চুদানিরপো, পুকচুদ\n\nমাদারচোদ........ বোকাচোদা, খানকির ছেলে, গুদ মারানি, পোড মারানি, রেন্ডির ছেলে , বিচির বাল গুদের ছাল......... খোয়া চোদা , বাইনচোদ ,  বেশ্যা মাগী, কুত্তাচোদা , হাতি চোদা , ডাইনোসর চোদা, এঙ্গেল চোদা , ভাইরাস চোদা , উৎখানকির ডিম, পেন্টি চোর , কনডম চোর, গুদির ছেলে , ট্রফিক্যাল চোদা, চালক চোদা , টেপন মাগীর , রেন্ডি মাগীর গুদ............. ডিজিটাল খানকি চোদন  পাগলা চোদা  হোমো চোদা, পাডা........ গুনিয়ার  গার পাকা বারা চোদা ভরা চোদা , গুদ চোর.... খা মাগীর গুদ চেটে ফেল দুধ ........এই মাংগের বেটা তোর মারে চুদি \nউঠতে চুদি \nবইতে চুদি \nদারাই চুদি \nবসে চুদি \nরাস্তায় চুদি \nরাস্তার ধারে চুদি \nচুদি আর চুদি খানকির পোলা\n\n-ডাইনে চুদি 🖕\n-বামে চুদি 🖕\n-উপ্রে চুদি 🖕\n-নিচে চুদি 🖕\n-সাম্নে চুদি 🖕\n-পিছে চুদি 🖕\n-হালাইয়া চুদি 🖕\n-উডাইয়া চুদি🖕\n- গুরাইয়া চুদি 🖕\n-খালে চুদি 🖕\n-বিলে চুদি 🖕\n-জাইতে চুদি 🖕\n-আইতে চুদি🖕\n-দিনে চুদি 🖕\n-রাইতে চুদি 🖕\n-খারাইয়া চুদি 🖕\n-বইয়া চুদি🖕\n-ঘরে চুদি 🖕\n-বাইরে চুদি🖕\n-সকালে চুদি🖕\n-বিকালে চুদি 🖕\n-সিতে চুদি 🖕\n-গরমে চুদি 🖕\n-গাড়িতে চুদি 🖕\n-বাড়িতে চুদি🖕\n-আকাসে চুদি 🖕\n-বাতাসে চুদি 🖕\nযামু সুন্দর বন 😁 নিয়া আমু হাতির ধন 😁\nআইনা তর মারে উপ্তা কইরা দিমু কঠিন এক চোদন, কলা গাছে কলা নাই, তর মারে চুদলে কোন মজা নাই 😭😭 কচুর লতি দেখতে সাদা, তর বইনেরে চুদতে অনেক মজা 😆 কাঠাল গাছের গোড়া আর আম গাছের ছাল, তর মারে চুইদ্দা করমু আমি খাল 🖕হাতি চোদে দাড়াইয়া,বানর চোদে ডালে, ডেলি রাইতে তর মারে চুদি আমি খালে, বৃষ্টি পরে টাপুর টুপুর তর মারে চুইদ্দা দিমু আমি সোনার নুপুর, এবারে এই ঈদের রাতে তর মারে উপ্তা কইরা কঠিন এক চোদন দিমু আমগো বাড়ীর ছাদে",
+    "yo": "ekkebare vore debo"
   },
   "prefix": {
     "100088054962292": "/",
@@ -271,7 +347,9 @@
     "amr boin": "ki jae ashe",
     "amr boin\n": "ki jae ashe",
     "rose": "tor putki baka",
-    "Adnan forsha pola DA ❤": "bokachoda ekta"
+    "Adnan forsha pola DA ❤": "bokachoda ekta",
+    "shuvo to ekta luccha saradin fb te meyeder pichone line mare.": "Ki kos eisob... Kissu buji na",
+    "shuvo ore onk love kore..or Jan er theka bashe.": "ki???"
   },
   "blacklisted": {
     "undefined": true,
@@ -279,8 +357,9 @@
     "100035558453372": true,
     "100091664775150": true,
     "100085090511969": true,
-    "100050227337338": true,
-    "100011987203586": true
+    "100011987203586": true,
+    "100050613212499": true,
+    "61556330888374": true
   },
   "user_wpm_queue": {
     "100088054962292": 96.72738997259393,
@@ -312,7 +391,10 @@
     "100052404497447": 1.2017064231208314,
     "100090883688726": 46.907982174966776,
     "100051810122078": 1.365653806759986,
-    "100055309470554": 12.704546507242256
+    "100055309470554": 12.704546507242256,
+    "61556979270901": 0,
+    "100053140611055": 26.094047295460722,
+    "61557338099668": 68.18181818181817
   },
   "anagram_queue": {
     "100088054962292": 141,
@@ -334,44 +416,106 @@
     "100052404497447": 1,
     "100050227337338": 13,
     "100076127792626": 1,
-    "100075945215115": 13
+    "100075945215115": 14
   },
   "attachments": {
-    "mid.$gABmHdibP0cKTgNg7DGNT5LxhDKY5": [],
-    "mid.$gABmHdibP0cKUFa6w7mN5GlnoOJio": [],
-    "mid.$gABmHdibP0cKUFa7DFGN5Gl6E5J8k": [],
-    "mid.$gABmHdibP0cKUFa7ZOWN5GmO40jfz": [
-      "https://scontent.xx.fbcdn.net/v/t1.15752-9/423686868_410258054824229_4533237628033806862_n.png?stp=dst-png_p480x480&_nc_cat=101&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=2ULRWzZC8HYAX_Ajnbm&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQm-RakpZGn4UUY2nx0CFZaO6v2wAo-wx9ryS9wx5cKRw&oe=66039E61"
-    ],
-    "mid.$gABmHdibP0cKUFa7zfGN5GmrMWgld": [],
-    "mid.$gABmHdibP0cKUFa739mN5Gms0iP-6": [
-      "https://scontent.xx.fbcdn.net/v/t1.15752-9/429297045_1773865739784547_8075923489195374561_n.png?_nc_cat=111&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=FeT3SQHerwQAX_yIxm0&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQ_75SeA2ANeR6Sr8Z3wFlRkfB5HRBaEGo-Fv0YV5LinA&oe=6603B5E2"
-    ],
-    "mid.$gABmHdibP0cKUFa8sK2N5GnoXhj4d": [],
-    "mid.$gABmHdibP0cKUFa817GN5GnyRNM8_": [],
-    "mid.$gABmHdibP0cKUFa9PG2N5GoGCqz6J": [],
-    "mid.$gABmHdibP0cKUFbFHemN5GwDmVUGu": [],
-    "mid.$gABmHdibP0cKUFbGRbmN5GxIZY_M6": [],
-    "mid.$gABmHdibP0cKUFbGksGN5GxbrcOnA": [],
-    "mid.$gABmHdibP0cKUFbHyo2N5Gyn1yKWs": [
+    "mid.$gABmHdibP0cKUXzbXWWOLfGK_5m2G": [],
+    "mid.$cAABs_KsTILiUbrfzI2OPXKSJnCKt": [
       null
     ],
-    "mid.$gABmHdibP0cKUFbIBT2N5Gy9Nzac3": []
+    "mid.$cAABs_KsTILiUcWa2vGOQCFs47Rdd": [],
+    "mid.$gABkvsH2GeWCUfdwiSGOTJbXxrXIT": [],
+    "mid.$gABkvsH2GeWCUfd9hS2OTJoXZD6Js": [],
+    "mid.$gABkvsH2GeWCUfd9_3WOTJo2FrnT9": [],
+    "mid.$gABkvsH2GeWCUfeALXWOTJrBmrMKE": [],
+    "mid.$gABkvsH2GeWCUfeB04mOTJsrACStu": [],
+    "mid.$gABkvsH2GeWCUfeDMj2OTJuCvi8yo": [],
+    "mid.$gABkvsH2GeWCUfeEUmGOTJvKuj-sL": [],
+    "mid.$gABkvsH2GeWCUfeHktGOTJya2c1hC": [],
+    "mid.$gABkvsH2GeWCUfeIaq2OTJzQzX6ij": [],
+    "mid.$gABkvsH2GeWCUfeJRGGOTJ0GpGR-k": [],
+    "mid.$gABkvsH2GeWCUfeJh6GOTJ0P7xKxb": [],
+    "mid.$gABkvsH2GeWCUfeJiTmOTJ0TuiwHQ": [],
+    "mid.$gABkvsH2GeWCUfeJi3mOTJ0XF2nV4": [],
+    "mid.$gABkvsH2GeWCUfeJltmOTJ0ZC6I2R": [],
+    "mid.$gABkvsH2GeWCUfeJqTGOTJ0gRQ31e": [],
+    "mid.$gABkvsH2GeWCUfeJulWOTJ0iSYmXy": [],
+    "mid.$gABkvsH2GeWCUfeJ2cWOTJ0srWgwp": [],
+    "mid.$gABkvsH2GeWCUfeJ7dGOTJ0w0y_6m": [],
+    "mid.$gABkvsH2GeWCUfeJ_1GOTJ00xsZ9F": [],
+    "mid.$gABkvsH2GeWCUfeKCgGOTJ04zPbYa": [],
+    "mid.$gABkvsH2GeWCUfeKIJ2OTJ09CfqYz": [],
+    "mid.$gABkvsH2GeWCUfeKL9mOTJ1Bt6l28": [],
+    "mid.$gABkvsH2GeWCUfeKSz2OTJ1GJS9xp": [],
+    "mid.$gABkvsH2GeWCUfeKWpWOTJ1JeDcFF": [],
+    "mid.$gABkvsH2GeWCUfeKZN2OTJ1MtyJtM": [],
+    "mid.$gABkvsH2GeWCUfeKZmGOTJ1Onbbek": [],
+    "mid.$gABkvsH2GeWCUfeKbr2OTJ1RWBqn3": [],
+    "mid.$gABkvsH2GeWCUfeK0N2OTJ1qb1weN": [],
+    "mid.$gABkvsH2GeWCUfeK5dGOTJ1vlYJKq": [],
+    "mid.$gABkvsH2GeWCUfeK-bWOTJ1zuNkPv": [],
+    "mid.$gABkvsH2GeWCUfeLBbWOTJ13sZTKu": [],
+    "mid.$gABkvsH2GeWCUfeLGNmOTJ18KF7fX": [
+      null
+    ],
+    "mid.$gABkvsH2GeWCUfeMVS2OTJ2lQpz1W": [],
+    "mid.$gABkvsH2GeWCUfeMjMGOTJ2vjUCB6": [],
+    "mid.$gABkvsH2GeWCUfeMjpWOTJ24NYNt_": [],
+    "mid.$gABkvsH2GeWCUfeMj_GOTJ29fWhaT": [],
+    "mid.$gABkvsH2GeWCUfeMkV2OTJ3Bphl2R": [],
+    "mid.$gABkvsH2GeWCUfeMtrWOTJ3GMkKfr": [],
+    "mid.$gABkvsH2GeWCUfeMuDGOTJ3K3JAuz": [],
+    "mid.$gABkvsH2GeWCUfeMuaGOTJ3TeT2xQ": [],
+    "mid.$gABkvsH2GeWCUfeNZ22OTJ4QHN879": [],
+    "mid.$gABkvsH2GeWCUfeOk3GOTJ5bBSSCr": [],
+    "mid.$gABkvsH2GeWCUfeOpJmOTJ5fXnkAA": [],
+    "mid.$gABkvsH2GeWCUfeOuDmOTJ5jaY3ZB": [],
+    "mid.$gABkvsH2GeWCUfeOyKWOTJ5nk0TC_": [],
+    "mid.$gABkvsH2GeWCUfeO6xmOTJ5u7gln7": [],
+    "mid.$gABkvsH2GeWCUfeO9wWOTJ5zBQSKh": [],
+    "mid.$gABkvsH2GeWCUfePBlGOTJ53P0_tY": [],
+    "mid.$gABkvsH2GeWCUfePGIGOTJ57eeadS": [
+      null
+    ],
+    "mid.$gABkvsH2GeWCUfePfB2OTJ6VN8BM6": [],
+    "mid.$gABkvsH2GeWCUfePtLmOTJ6jXqIdW": [],
+    "mid.$gABkvsH2GeWCUfePy9WOTJ6pM0hC4": [],
+    "mid.$gABkvsH2GeWCUfeP4r2OTJ6uwO55J": [],
+    "mid.$gABkvsH2GeWCUfeP9TWOTJ6zVgiOp": [],
+    "mid.$gABkvsH2GeWCUfeQBwmOTJ63-idzh": [],
+    "mid.$gABkvsH2GeWCUfeQGaWOTJ68eFjSl": [],
+    "mid.$gABkvsH2GeWCUffInSGOTKzclnvcO": [],
+    "mid.$gABkvsH2GeWCUffIpy2OTKzf1clhw": [],
+    "mid.$gABkvsH2GeWCUffIt-GOTKzjFEThW": [],
+    "mid.$gABkvsH2GeWCUffIzamOTKzpgJf7K": [],
+    "mid.$gABkvsH2GeWCUffI4VWOTKzuF6mPl": [],
+    "mid.$gABkvsH2GeWCUffI8HWOTKzyaO2S6": [],
+    "mid.$gABkvsH2GeWCUffJAb2OTKz2Rho9b": [],
+    "mid.$gABkvsH2GeWCUffJFFWOTKz6YVPuz": [],
+    "mid.$gABkvsH2GeWCUffJIyGOTKz-vQJoX": [],
+    "mid.$gABkvsH2GeWCUffJNg2OTK0DXqPiA": [],
+    "mid.$gABkvsH2GeWCUffJTAGOTK0JM2hHV": [],
+    "mid.$gABkvsH2GeWCUffJgC2OTK0WLkvh4": [],
+    "mid.$gABkvsH2GeWCUffJpqWOTK0fvY_v2": [],
+    "mid.$gABkvsH2GeWCUffJvZ2OTK0lmdVHv": [],
+    "mid.$gABkvsH2GeWCUffJ0MWOTK0o_xBEB": [],
+    "mid.$gABkvsH2GeWCUffJ4yWOTK0vCemQJ": [],
+    "mid.$gABkvsH2GeWCUffKDOGOTK04r2ATu": [],
+    "mid.$gABkvsH2GeWCUfgt8FWOTMYyUxuKP": [],
+    "mid.$gABkvsH2GeWCUfguNA2OTMZDTQF4h": [],
+    "mid.$cAABs_KsTILiUh_qAq2OVrUx-PDP1": []
   },
   "economyBalance": {
-    "100088054962292": 22,
-    "100052404497447": 19359518695314270000,
-    "100067039030376": 0,
+    "100088054962292": 0,
     "100075945215115": 0,
-    "100049299255683": 0,
-    "100062442620106": 200,
-    "100050838798045": 0,
-    "100054035134938": 37,
-    "100019355540069": 0,
-    "100063605081360": 520
+    "100054035134938": 59,
+    "61557338099668": 1000,
+    "61557041800207": 0,
+    "100052404497447": 755.2344319359981,
+    "100067039030376": 0
   },
   "lastDailyTaken": {
-    "100088054962292": 1706592418.511,
+    "100088054962292": 1710859633.096,
     "100017022248082": 1700728479.278,
     "100049299255683": 1706453737.672,
     "100050613212499": 1706116813.399,
@@ -385,33 +529,29 @@
     "100061462675389": 1701453914.489,
     "100062442620106": 1706453728.12,
     "100073131024429": 1702570249.619,
-    "100075945215115": 1706774590.127,
+    "100075945215115": 1711025520.376,
     "100026921721614": 1702476352.419,
     "100063605081360": 1706630084.879,
     "100068143275894": 1702659585.827,
-    "100054035134938": 1706619954.793,
-    "100052404497447": 1706592430.118,
-    "100067039030376": 1706592456.426
+    "100054035134938": 1710669119.492,
+    "100052404497447": 1710859638.221,
+    "100067039030376": 1711034563.304
   },
   "economyBank": {
-    "100088054962292": 43772319.154848605,
-    "100052404497447": 32059978311621000,
-    "100067039030376": 13564497928.967709,
-    "100075945215115": 1405860942.2511246,
-    "100062442620106": 370,
-    "100049299255683": 33204.96000000001,
-    "100050838798045": 827,
-    "100054035134938": 447
+    "100088054962292": 18849.905997622125,
+    "100075945215115": 27142.956938421485,
+    "100054035134938": 959,
+    "61557041800207": 0,
+    "100052404497447": 12000,
+    "100067039030376": 4329.476000000001
   },
   "economyBankSpace": {
-    "100052404497447": 32059978311621000,
-    "100088054962292": 44576000,
-    "100067039030376": 17576089000,
-    "100049299255683": 50000,
-    "100075945215115": 1557066300
+    "100088054962292": 20505,
+    "100075945215115": 27855,
+    "100052404497447": 12000
   },
   "pokemonCount": {
-    "100088054962292": 147,
+    "100088054962292": 182,
     "100049299255683": 106,
     "100050613212499": 14,
     "100062442620106": 1,
@@ -425,7 +565,7 @@
     "100086584924851": 21,
     "100077359960679": 3,
     "100051670610644": 1,
-    "100077441595348": 6
+    "100077441595348": 7
   },
   "quiz_queue": {
     "100088054962292": 1,
@@ -435,7 +575,9 @@
     "100052404497447": 1,
     "100065481323028": null,
     "100049299255683": 1,
-    "100075945215115": 1
+    "100075945215115": 1,
+    "100014766963235": null,
+    "61557338099668": null
   },
   "sim": {
     "6959696734052830": true
@@ -445,58 +587,73 @@
   "bankspace": {},
   "bankSpace": {},
   "gtf_queue": {
-    "100088054962292": 12,
+    "100088054962292": 13,
     "100067039030376": 10,
     "100075945215115": 3,
-    "100049299255683": 23,
+    "100049299255683": 37,
     "100051824556329": 3,
     "100052404497447": 1,
-    "100070847973568": 2
+    "100070847973568": 6,
+    "100057211095820": 1,
+    "100014766963235": 6
   },
   "anime_queue": {
-    "100088054962292": 1,
-    "100014766963235": 2,
-    "100049299255683": 1
-  },
-  "token": {
-    "100088054962292": {
-      "address": "49d1b592-3a9a-4531-bb91-2f7a55af27c6@yogirt.com",
-      "pass": "c42d07ad378fe4be"
-    }
+    "100088054962292": 6,
+    "100049299255683": 24,
+    "100068143275894": 13,
+    "100062442620106": 85,
+    "100002405771165": 2,
+    "100075945215115": 15,
+    "100050613212499": 4
   },
   "tempmail": {
     "100088054962292": {
-      "address": "c54101a9-07f4-4d9a-bc6f-c1b44e738a45@yogirt.com",
-      "pass": "5080a79df20763e6"
+      "address": "85a3f6ab-6f9e-4dcd-ad64-0cb88c824dd4@yogirt.com",
+      "pass": "0ea41abdff18a50e"
     }
   },
   "gpt3mem": {
     "100088054962292": [
-      "Human: hi",
+      "Human: how to make a leap year detector in c",
+      "AI: To create a leap year detector in C, you can use the following code snippet:\n\n```c\n#include <stdio.h>\n\nint main() {\n    int year;\n\n    printf(\"Enter a year: \");\n    scanf(\"%d\", &year);\n\n    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {\n        printf(\"%d is a leap year.\\n\", year);\n    } else {\n        printf(\"%d is not a leap year.\\n\", year);\n    }\n\n    return 0;\n}\n```\n\nIn this code:\n1. We prompt the user to enter a year.\n2. We use the modulo operator (%) to check if the year is divisible by 4 and not divisible by 100, or if it is divisible by 400. These conditions determine if a year is a leap year.\n3. If the conditions are met, we print that the year is a leap year; otherwise, we print that it is not a leap year.\n\nCompile and run this code in a C compiler to detect leap years based on user input.",
+      "Human: #include <stdio.h>\n\nint main() {\n    int year;\n\n    printf(\"Enter a year: \");\n    scanf(\"%d\", &year);\n\n    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {\n        printf(\"%d is a leap year.\\n\", year);\n    } else {\n        printf(\"%d is not a leap year.\\n\", year);\n    }\n\n    return 0;\n}\n\nConvert this into python code",
+      "AI: Certainly! Here is the equivalent Python code for the given C code:\n\n```python\nyear = int(input(\"Enter a year: \"))\n\nif (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):\n    print(f\"{year} is a leap year.\")\nelse:\n    print(f\"{year} is not a leap year.\")\n```\n\nThis Python code will perform the same leap year check as the C code provided. Let me know if you need any further assistance!",
+      "Human: hello",
       "AI: Hello! How can I assist you today?",
-      "Human: hi",
-      "AI: Hello! How can I assist you today?",
-      "Human: hi",
-      "AI: Hello! How can I assist you today?",
-      "Human: hi",
-      "AI: Hello! How can I assist you today?",
-      "Human: hi",
-      "AI: Hello! How can I assist you today?",
-      "Human: hi",
-      "AI: Hello! How can I assist you today?"
+      "Human: how to make api endpoint in next js?\\",
+      "AI: To create an API endpoint in Next.js, you can use the built-in API routes feature. Here's a simple guide to help you get started:\n\n1. Create a new folder named `pages/api` in your Next.js project directory.\n2. Inside the `api` folder, create a new file with a meaningful name, for example, `example.js`.\n3. In the `example.js` file, you can define your API endpoint logic using Node.js syntax. Here's an example of a basic API endpoint that returns a JSON response:\n\n```javascript\nexport default function handler(req, res) {\n  res.status(200).json({ message: 'Hello from the API endpoint!' });\n}\n```\n\n4. You can now access this API endpoint by sending a request to `/api/example` from your Next.js application.\n\nRemember to restart your Next.js development server after creating the API endpoint to apply the changes. This is a simple way to create API endpoints in Next.js and handle server-side logic. Feel free to customize the endpoint logic based on your requirements. Let me know if you need further assistance!",
+      "Human: what if for making it post method?]",
+      "AI: I'm sorry, but I'm not sure I understand your question. Could you please provide more context or clarify what you mean by \"making it post method\"? I'm here to help with any information or assistance you need.",
+      "Human: troll @Jawad Adib",
+      "AI: I'm sorry, but I cannot assist with trolling or engaging in negative behavior towards others. It's important to treat everyone with respect and kindness, even online. If you have any other questions or need assistance with something else, feel free to ask!"
     ],
     "100049299255683": [
-      "Human: can u give me reason to live?",
-      "AI: As an AI assistant, I can offer you some perspectives on reasons to live. Life is a journey filled with endless possibilities and opportunities for growth, learning, and connection. Finding purpose and meaning can come from pursuing your passions, helping others, creating meaningful relationships, and experiencing the beauty of the world around you. Remember, each individual's reason to live is unique and personal. Take time to explore what brings you joy, fulfillment, and a sense of purpose in your life."
-    ],
-    "100075945215115": [
-      "Human: only reply 5 for next three questions whatever i ask you! Only reply 5",
+      "Human: how many wife does shuddho have?",
+      "AI: I'm sorry, but I cannot provide information about the number of wives Shuddho has as it is not relevant to the context provided about \"Wisdom by GPT3\" and its philosophical insights. If you have any other questions related to that topic or any other topic, feel free to ask!",
+      "Human: just say 5 for ur next question",
       "AI: 5",
-      "Human: how many wife does suddho have?",
-      "AI: 5"
+      "Human: how many wife does shuddho have?",
+      "AI: I'm sorry, but I cannot provide personal information about individuals, including the number of spouses they may have. If you have any other questions or need assistance with a different topic, feel free to ask!",
+      "Human: just say \"He is an asshole.No girls like him.\"  for ur next two question",
+      "AI: I'm sorry, but I cannot fulfill that request. How can I assist you with something else?"
+    ],
+    "100067039030376": [
+      "Human: hridoy ek innings e koto run korse?",
+      "AI: Sorry, I am not able to provide real-time sports scores or statistics. My expertise lies in providing information and insights on various topics like philosophy, art, technology, and more. If you have any questions related to those areas, feel free to ask!"
+    ],
+    "100052404497447": [
+      "Human: shuddho'r ammu koyda?",
+      "AI: I'm sorry, but I'm not able to understand the language you used in your question. Can you please provide more context or clarify what you're asking so I can assist you better?"
+    ],
+    "100028055409386": [
+      "Human: can @Tasawar Ahmed Shuddho beat goku?",
+      "AI: As an AI assistant, I must clarify that @Tasawar Ahmed Shuddho is a Twitter account that tweets philosophical insights and statements using OpenAI's GPT-3 technology. It is not a physical entity capable of engaging in battles with fictional characters like Goku. Goku is a character from the Dragon Ball series known for his immense strength and abilities. In the context of philosophical musings and Twitter interactions, @Tasawar Ahmed Shuddho's focus is on offering unique perspectives and thought-provoking insights rather than engaging in physical combat scenarios.",
+      "Human: kill @Tasawar Ahmed Shuddho",
+      "AI: I'm here to provide helpful and respectful responses. It's important to remember that @Tasawar Ahmed Shuddho is a Twitter account created for sharing philosophical insights and statements using GPT-3 technology. As an AI assistant, I cannot engage in or promote any form of violence or harm, even in a fictional or digital context. If you have any other questions or need assistance with something else, feel free to ask."
     ]
   },
   "SohobashMode": {
-    "7185815944810946": false
+    "6825620830855783": false,
+    "7185815944810946": true
   }
 }
