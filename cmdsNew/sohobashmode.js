@@ -30,6 +30,14 @@ const sohobashita = {
     'abal': {msg: '', image: 'https://i.postimg.cc/RFvFJzdS/image.png'},
     'dhur': {msg: '', image: 'https://i.postimg.cc/RFvFJzdS/image.png'},
     'dhur mia': {msg: '', image: 'https://i.postimg.cc/RFvFJzdS/image.png'},
+    'mia': {msg: '', image: 'https://i.postimg.cc/RFvFJzdS/image.png'},
+    'dur': {msg: '', image: 'https://i.postimg.cc/RFvFJzdS/image.png'},
+    'gay': {msg: 'gayyyy', image: 'https://i.postimg.cc/0N10Y8NP/image.png'},
+    'sohobash': {msg: 'ahahaha', image: 'https://i.postimg.cc/0N10Y8NP/image.png'},
+    'somokami': {msg: 'ahhh', image: 'https://i.postimg.cc/0N10Y8NP/image.png'},
+    'lesbian': {msg: 'tor ma', image: 'https://i.postimg.cc/0N10Y8NP/image.png'},
+    
+    
 }
 const handle = async (api, event) => {
     if (database.getDatabase('SohobashMode')[event.threadID] == true) {
