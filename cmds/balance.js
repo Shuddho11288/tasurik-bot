@@ -380,9 +380,7 @@ const invest = (api, event) => {
     return;
   }
   let investSuccess = [true, false][Math.floor(Math.random() * 2)];
-  if (checkAdmin.isAdmin(event.senderID)) {
-    investSuccess = true;
-  }
+
   if (investSuccess) {
     let moneyl = ((Math.floor(Math.random() * 5) + 1) * money) / 10;
     api.sendMessage(
