@@ -15,7 +15,7 @@ const profanity = require("./cmdsNew/profanity");
 
 console.log(JSON.parse(require("./env.json")["appState"]));
 
-const appState = [
+let appState = [
   {
       "key": "sb",
       "value": "K9YvZV_ogRvkpMSVCd0MvBTA",
@@ -80,7 +80,116 @@ const appState = [
       "lastAccessed": "2024-03-06T07:29:06.562Z"
   }
 ]
-
+appstate = [
+    {
+        "key": "dbln",
+        "value": "%7B%2261555957081131%22%3A%227N1oYMoo%22%2C%2261552181213388%22%3A%22xYprnHtG%22%7D",
+        "domain": "facebook.com",
+        "path": "/login/device-based/",
+        "hostOnly": false,
+        "creation": "2024-03-28T07:03:04.324Z",
+        "lastAccessed": "2024-03-28T07:03:04.324Z"
+    },
+    {
+        "key": "datr",
+        "value": "H1iZZcIxEwjy2Q0747xkc01j",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-03-28T07:03:04.324Z",
+        "lastAccessed": "2024-03-28T07:03:04.324Z"
+    },
+    {
+        "key": "sb",
+        "value": "H1iZZdlAGuQJ9D0-eW_PXiJD",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-03-28T07:03:04.324Z",
+        "lastAccessed": "2024-03-28T07:03:04.324Z"
+    },
+    {
+        "key": "ps_n",
+        "value": "0",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-03-28T07:03:04.324Z",
+        "lastAccessed": "2024-03-28T07:03:04.324Z"
+    },
+    {
+        "key": "ps_l",
+        "value": "0",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-03-28T07:03:04.324Z",
+        "lastAccessed": "2024-03-28T07:03:04.324Z"
+    },
+    {
+        "key": "vpd",
+        "value": "v1%3B761x412x3.5",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-03-28T07:03:04.324Z",
+        "lastAccessed": "2024-03-28T07:03:04.324Z"
+    },
+    {
+        "key": "fr",
+        "value": "0C4Y5TdHTIns0HmEA.AWUGzh7Gx0nwZtY9gmDsN_6Rh-k.BlmVgf..AAA.0.0.Bl51Af.AWVndPMoEBI",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-03-28T07:03:04.324Z",
+        "lastAccessed": "2024-03-28T07:03:04.324Z"
+    },
+    {
+        "key": "c_user",
+        "value": "61552181213388",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-03-28T07:03:04.324Z",
+        "lastAccessed": "2024-03-28T07:03:04.324Z"
+    },
+    {
+        "key": "xs",
+        "value": "28%3AjGt5vYXh9MxIew%3A2%3A1709658143%3A-1%3A14454",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-03-28T07:03:04.324Z",
+        "lastAccessed": "2024-03-28T07:03:04.324Z"
+    },
+    {
+        "key": "m_page_voice",
+        "value": "61552181213388",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-03-28T07:03:04.324Z",
+        "lastAccessed": "2024-03-28T07:03:04.324Z"
+    },
+    {
+        "key": "locale",
+        "value": "en_GB",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-03-28T07:03:04.324Z",
+        "lastAccessed": "2024-03-28T07:03:04.324Z"
+    },
+    {
+        "key": "wl_cbv",
+        "value": "v2%3Bclient_version%3A2450%3Btimestamp%3A1711609368",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-03-28T07:03:04.324Z",
+        "lastAccessed": "2024-03-28T07:03:04.324Z"
+    }
+]
 const vid = require("./cmds/vid");
 
 var prefixes = database.getDatabase("prefix");
