@@ -16,178 +16,134 @@ const profanity = require("./cmdsNew/profanity");
 console.log(JSON.parse(require("./env.json")["appState"]));
 
 let appState = [
-  {
-      "key": "sb",
-      "value": "K9YvZV_ogRvkpMSVCd0MvBTA",
-      "domain": "facebook.com",
-      "path": "/",
-      "hostOnly": false,
-      "creation": "2024-03-06T07:29:06.562Z",
-      "lastAccessed": "2024-03-06T07:29:06.562Z"
-  },
-  {
-      "key": "datr",
-      "value": "MLm0Zb4gfa3zstAEZQ9VUZMU",
-      "domain": "facebook.com",
-      "path": "/",
-      "hostOnly": false,
-      "creation": "2024-03-06T07:29:06.562Z",
-      "lastAccessed": "2024-03-06T07:29:06.562Z"
-  },
-  {
-      "key": "c_user",
-      "value": "61555957081131",
-      "domain": "facebook.com",
-      "path": "/",
-      "hostOnly": false,
-      "creation": "2024-03-06T07:29:06.562Z",
-      "lastAccessed": "2024-03-06T07:29:06.562Z"
-  },
-  {
-      "key": "ps_n",
-      "value": "0",
-      "domain": "facebook.com",
-      "path": "/",
-      "hostOnly": false,
-      "creation": "2024-03-06T07:29:06.562Z",
-      "lastAccessed": "2024-03-06T07:29:06.562Z"
-  },
-  {
-      "key": "ps_l",
-      "value": "0",
-      "domain": "facebook.com",
-      "path": "/",
-      "hostOnly": false,
-      "creation": "2024-03-06T07:29:06.562Z",
-      "lastAccessed": "2024-03-06T07:29:06.562Z"
-  },
-  {
-      "key": "xs",
-      "value": "26%3AiAHXzREIEgui0A%3A2%3A1706354148%3A-1%3A-1%3A%3AAcXO9DYlG7FYb6Kz_hqDX7qNrD1Mp_7Wa5ScsNgDqQ",
-      "domain": "facebook.com",
-      "path": "/",
-      "hostOnly": false,
-      "creation": "2024-03-06T07:29:06.562Z",
-      "lastAccessed": "2024-03-06T07:29:06.562Z"
-  },
-  {
-      "key": "fr",
-      "value": "1fjKaepEYtnkpfdY2.AWXDpkYR-xNMrKRb8J5qjc1TPcA.Bl6BsS..AAA.0.0.Bl6BsS.AWXGjFAFkao",
-      "domain": "facebook.com",
-      "path": "/",
-      "hostOnly": false,
-      "creation": "2024-03-06T07:29:06.562Z",
-      "lastAccessed": "2024-03-06T07:29:06.562Z"
-  }
-]
-appstate = [
     {
-        "key": "dbln",
-        "value": "%7B%2261555957081131%22%3A%227N1oYMoo%22%2C%2261552181213388%22%3A%22xYprnHtG%22%7D",
-        "domain": "facebook.com",
-        "path": "/login/device-based/",
+        "domain": ".facebook.com",
+        "expirationDate": 1741948227.163322,
         "hostOnly": false,
-        "creation": "2024-03-28T07:03:04.324Z",
-        "lastAccessed": "2024-03-28T07:03:04.324Z"
+        "httpOnly": true,
+        "name": "ps_l",
+        "path": "/",
+        "sameSite": "lax",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "0"
     },
     {
-        "key": "datr",
-        "value": "H1iZZcIxEwjy2Q0747xkc01j",
-        "domain": "facebook.com",
-        "path": "/",
+        "domain": ".facebook.com",
+        "expirationDate": 1746194254.095877,
         "hostOnly": false,
-        "creation": "2024-03-28T07:03:04.324Z",
-        "lastAccessed": "2024-03-28T07:03:04.324Z"
+        "httpOnly": true,
+        "name": "datr",
+        "path": "/",
+        "sameSite": "no_restriction",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "T3cFZlsE7WslccoPlvO7T0ur"
     },
     {
-        "key": "sb",
-        "value": "H1iZZdlAGuQJ9D0-eW_PXiJD",
-        "domain": "facebook.com",
-        "path": "/",
+        "domain": ".facebook.com",
+        "expirationDate": 1719410483.104353,
         "hostOnly": false,
-        "creation": "2024-03-28T07:03:04.324Z",
-        "lastAccessed": "2024-03-28T07:03:04.324Z"
+        "httpOnly": true,
+        "name": "fr",
+        "path": "/",
+        "sameSite": "no_restriction",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "19lJwQrByyiHqNU3J.AWUUDdsemYgjIy28_aL8OH5dMTQ.BmA_02..AAA.0.0.BmBXg3.AWUN2XHx6q0"
     },
     {
-        "key": "ps_n",
-        "value": "0",
-        "domain": "facebook.com",
-        "path": "/",
+        "domain": ".facebook.com",
+        "expirationDate": 1743170482.662085,
         "hostOnly": false,
-        "creation": "2024-03-28T07:03:04.324Z",
-        "lastAccessed": "2024-03-28T07:03:04.324Z"
+        "httpOnly": true,
+        "name": "xs",
+        "path": "/",
+        "sameSite": "no_restriction",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "20%3AtecnOmGqtf_Qxw%3A2%3A1711634484%3A-1%3A14454"
     },
     {
-        "key": "ps_l",
-        "value": "0",
-        "domain": "facebook.com",
-        "path": "/",
+        "domain": ".facebook.com",
+        "expirationDate": 1712239107.637306,
         "hostOnly": false,
-        "creation": "2024-03-28T07:03:04.324Z",
-        "lastAccessed": "2024-03-28T07:03:04.324Z"
+        "httpOnly": false,
+        "name": "locale",
+        "path": "/",
+        "sameSite": "no_restriction",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "en_GB"
     },
     {
-        "key": "vpd",
-        "value": "v1%3B761x412x3.5",
-        "domain": "facebook.com",
-        "path": "/",
+        "domain": ".facebook.com",
+        "expirationDate": 1743170482.662073,
         "hostOnly": false,
-        "creation": "2024-03-28T07:03:04.324Z",
-        "lastAccessed": "2024-03-28T07:03:04.324Z"
+        "httpOnly": false,
+        "name": "c_user",
+        "path": "/",
+        "sameSite": "no_restriction",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "61552181213388"
     },
     {
-        "key": "fr",
-        "value": "0C4Y5TdHTIns0HmEA.AWUGzh7Gx0nwZtY9gmDsN_6Rh-k.BlmVgf..AAA.0.0.Bl51Af.AWVndPMoEBI",
-        "domain": "facebook.com",
-        "path": "/",
+        "domain": ".facebook.com",
         "hostOnly": false,
-        "creation": "2024-03-28T07:03:04.324Z",
-        "lastAccessed": "2024-03-28T07:03:04.324Z"
+        "httpOnly": false,
+        "name": "presence",
+        "path": "/",
+        "sameSite": null,
+        "secure": true,
+        "session": true,
+        "storeId": null,
+        "value": "C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1711634489578%2C%22v%22%3A1%7D"
     },
     {
-        "key": "c_user",
-        "value": "61552181213388",
-        "domain": "facebook.com",
-        "path": "/",
+        "domain": ".facebook.com",
+        "expirationDate": 1741948227.163172,
         "hostOnly": false,
-        "creation": "2024-03-28T07:03:04.324Z",
-        "lastAccessed": "2024-03-28T07:03:04.324Z"
+        "httpOnly": true,
+        "name": "ps_n",
+        "path": "/",
+        "sameSite": "no_restriction",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "0"
     },
     {
-        "key": "xs",
-        "value": "28%3AjGt5vYXh9MxIew%3A2%3A1709658143%3A-1%3A14454",
-        "domain": "facebook.com",
-        "path": "/",
+        "domain": ".facebook.com",
+        "expirationDate": 1746194482.66197,
         "hostOnly": false,
-        "creation": "2024-03-28T07:03:04.324Z",
-        "lastAccessed": "2024-03-28T07:03:04.324Z"
+        "httpOnly": true,
+        "name": "sb",
+        "path": "/",
+        "sameSite": "no_restriction",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "K9YvZV_ogRvkpMSVCd0MvBTA"
     },
     {
-        "key": "m_page_voice",
-        "value": "61552181213388",
-        "domain": "facebook.com",
-        "path": "/",
+        "domain": ".facebook.com",
+        "expirationDate": 1712239286,
         "hostOnly": false,
-        "creation": "2024-03-28T07:03:04.324Z",
-        "lastAccessed": "2024-03-28T07:03:04.324Z"
-    },
-    {
-        "key": "locale",
-        "value": "en_GB",
-        "domain": "facebook.com",
+        "httpOnly": false,
+        "name": "wd",
         "path": "/",
-        "hostOnly": false,
-        "creation": "2024-03-28T07:03:04.324Z",
-        "lastAccessed": "2024-03-28T07:03:04.324Z"
-    },
-    {
-        "key": "wl_cbv",
-        "value": "v2%3Bclient_version%3A2450%3Btimestamp%3A1711609368",
-        "domain": "facebook.com",
-        "path": "/",
-        "hostOnly": false,
-        "creation": "2024-03-28T07:03:04.324Z",
-        "lastAccessed": "2024-03-28T07:03:04.324Z"
+        "sameSite": "lax",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "1920x945"
     }
 ]
 const vid = require("./cmds/vid");
