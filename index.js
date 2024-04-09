@@ -31,7 +31,7 @@ let appState =[
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1746194254.095877,
+        "expirationDate": 1747214228.76252,
         "hostOnly": false,
         "httpOnly": true,
         "name": "datr",
@@ -40,11 +40,11 @@ let appState =[
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "T3cFZlsE7WslccoPlvO7T0ur"
+        "value": "kQcVZk6ooy75id1VJm7ml73z"
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1719506455.841657,
+        "expirationDate": 1720430781.467188,
         "hostOnly": false,
         "httpOnly": true,
         "name": "fr",
@@ -53,11 +53,11 @@ let appState =[
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "19CzpuwEPA0ZXZapr.AWVEpZgeVD-mB6Tc8LOjsQoeKqM.BmBu6H..AAA.0.0.BmBu8X.AWVs3oRRxIA"
+        "value": "1HGiXvpPvoYMSI7HP.AWXmaLN4brJzEAXp9y2JnrTZFDw.BmFQm9..AAA.0.0.BmFQm9.AWX0gHGfu2s"
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1743266313.383453,
+        "expirationDate": 1744190781.467117,
         "hostOnly": false,
         "httpOnly": true,
         "name": "xs",
@@ -66,24 +66,11 @@ let appState =[
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "20%3AtecnOmGqtf_Qxw%3A2%3A1711634484%3A-1%3A14454%3A%3AAcXF8xiEbLkvpcwsEGmm5l4ESxtxUrr9KVKG9fT0AQ"
+        "value": "40%3AY9PqNhVN4lppQA%3A2%3A1712654223%3A-1%3A14454%3A%3AAcV9IfrwP-AVnpmm5bv9LxAfAYAb-7k6YqAMQEGnrg"
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1712239107.637306,
-        "hostOnly": false,
-        "httpOnly": false,
-        "name": "locale",
-        "path": "/",
-        "sameSite": "no_restriction",
-        "secure": true,
-        "session": false,
-        "storeId": null,
-        "value": "en_GB"
-    },
-    {
-        "domain": ".facebook.com",
-        "expirationDate": 1743266313.383367,
+        "expirationDate": 1744190781.466958,
         "hostOnly": false,
         "httpOnly": false,
         "name": "c_user",
@@ -104,11 +91,11 @@ let appState =[
         "secure": true,
         "session": true,
         "storeId": null,
-        "value": "C%7B%22lm3%22%3A%22g.7185815944810946%22%2C%22t3%22%3A%5B%5D%2C%22utc3%22%3A1711730463287%2C%22v%22%3A1%7D"
+        "value": "C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1712654283654%2C%22v%22%3A1%7D"
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1712335259,
+        "expirationDate": 1713259082,
         "hostOnly": false,
         "httpOnly": false,
         "name": "dpr",
@@ -134,7 +121,7 @@ let appState =[
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1746194482.66197,
+        "expirationDate": 1747214224.577031,
         "hostOnly": false,
         "httpOnly": true,
         "name": "sb",
@@ -147,7 +134,7 @@ let appState =[
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1712335259,
+        "expirationDate": 1713259082,
         "hostOnly": false,
         "httpOnly": false,
         "name": "wd",
@@ -156,7 +143,7 @@ let appState =[
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "1536x730"
+        "value": "1046x718"
     }
 ]
 const vid = require("./cmds/vid");
