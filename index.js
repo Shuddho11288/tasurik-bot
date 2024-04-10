@@ -44,7 +44,7 @@ let appState =[
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1720430781.467188,
+        "expirationDate": 1720521563.407122,
         "hostOnly": false,
         "httpOnly": true,
         "name": "fr",
@@ -53,11 +53,11 @@ let appState =[
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "1HGiXvpPvoYMSI7HP.AWXmaLN4brJzEAXp9y2JnrTZFDw.BmFQm9..AAA.0.0.BmFQm9.AWX0gHGfu2s"
+        "value": "1ZpPJDSMlE0lixCsW.AWVR7kqQbuTd-RWJfH1R1DqlkcU.BmFmxb..AAA.0.0.BmFmxb.AWUm_HEaRSU"
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1744190781.467117,
+        "expirationDate": 1744281563.407092,
         "hostOnly": false,
         "httpOnly": true,
         "name": "xs",
@@ -66,11 +66,11 @@ let appState =[
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "40%3AY9PqNhVN4lppQA%3A2%3A1712654223%3A-1%3A14454%3A%3AAcV9IfrwP-AVnpmm5bv9LxAfAYAb-7k6YqAMQEGnrg"
+        "value": "40%3AY9PqNhVN4lppQA%3A2%3A1712654223%3A-1%3A14454%3A%3AAcUTK6VzS6sAeEeN5aiP7I6UOTq27bn-usgSqc8T0w"
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1744190781.466958,
+        "expirationDate": 1744281563.406867,
         "hostOnly": false,
         "httpOnly": false,
         "name": "c_user",
@@ -91,11 +91,11 @@ let appState =[
         "secure": true,
         "session": true,
         "storeId": null,
-        "value": "C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1712654283654%2C%22v%22%3A1%7D"
+        "value": "C%7B%22lm3%22%3A%22g.7185815944810946%22%2C%22t3%22%3A%5B%5D%2C%22utc3%22%3A1712745575004%2C%22v%22%3A1%7D"
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1713259082,
+        "expirationDate": 1713350362,
         "hostOnly": false,
         "httpOnly": false,
         "name": "dpr",
@@ -134,7 +134,7 @@ let appState =[
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1713259082,
+        "expirationDate": 1713350363,
         "hostOnly": false,
         "httpOnly": false,
         "name": "wd",
