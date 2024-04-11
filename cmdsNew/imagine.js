@@ -6,25 +6,13 @@ const config = {
     "author": "Tasawar Ahmed Shuddho",
     "version": "1.0.0",
     "permission": "all"
-}
+};
+
 const axios = require("axios");
-
-
-
-
-
 const sendImage = require('../cmds/basicTools/sendImage');
-const run = async (api, event, args) => {
-    let prompt = args.join(" ");
-    console.log(prompt)
 
-    if (!prompt) {
-        api.sendMessage("Please enter a prompt!", event.threadID, event.messageID);
-        return;
-    }
-    let loadingmsg = `Generating image with prompt: ${prompt}`
-        api.sendMessage(loadingmsg, event.threadID, event.messageID);
-      const url = "https://api.imggen.ai/guest-generate-image";
+const imagine = async (prompt) => {
+  const url = "https://api.imggen.ai/guest-generate-image";
   const data = { prompt };
 
   const response = await axios.post(url, data);
@@ -35,35 +23,40 @@ const run = async (api, event, args) => {
   let images = [];
 
   const checkProcess = async () => {
-    try {
-      const processResponse = await axios.get(nurl);
-        console.log(processResponse.data)
-      if (processResponse.data.images?.length !== 4) {
-        setTimeout(checkProcess, 1000); // Check every 1 second
-      } else {
-        images = processResponse.data.images;
-        images.forEach((image, index) => {
-          images[index] = 'https://api.imggen.ai' + image;
-        });
-        console.log(images);
-        
-
-    let msg = `Your prompt: ${prompt}`;
-
-
-    //sendImage.sendImageWithMessage(api, event, result.url, msg, ".png");
-
-    sendImage.sendBulkImage(api, event, images, msg, [event.senderID]);
-    
-      }
-    } catch (error) {
-      console.log("Error while watching process:", error);
+    const processResponse = await axios.get(nurl);
+    if (!processResponse.data.images) {
+      // Images data not available yet, wait and retry
+      setTimeout(checkProcess, 1000); // Check every 1 second
+    } else if (processResponse.data.images.length !== 4) {
+      // Images data incomplete, wait and retry
+      setTimeout(checkProcess, 1000); // Check every 1 second
+    } else {
+      // Images data complete, return images
+      images = processResponse.data.images.map(image => 'https://api.imggen.ai' + image);
+      console.log(images);
+      return images;
     }
   };
 
   await checkProcess();
-   
+};
 
+const run = async (api, event, args) => {
+    let prompt = args.join(" ");
+    console.log(prompt)
+
+    if (!prompt) {
+        api.sendMessage("Please enter a prompt!", event.threadID, event.messageID);
+        return;
+    }
+    let loadingmsg = `Generating image with prompt: ${prompt}\n`;
+    api.sendMessage(loadingmsg, event.threadID, event.messageID);
+
+    let result = await imagine(prompt);
+    console.log(result);
+
+    let msg = `Your prompt: ${prompt}`;
+    sendImage.sendBulkImage(api, event, result, msg);
 };
 
 const handle = async (api, event) => {
