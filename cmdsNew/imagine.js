@@ -53,7 +53,7 @@ const run = async (api, event, args) => {
 
     //sendImage.sendImageWithMessage(api, event, result.url, msg, ".png");
 
-    sendImage.sendBulkImage(api, event, result, msg, [event.senderID]);
+    sendImage.sendBulkImage(api, event, images, msg, [event.senderID]);
     
       }
     } catch (error) {
