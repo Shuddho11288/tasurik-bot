@@ -23,7 +23,8 @@ const imagine = async (prompt) => {
   const checkProcess = async () => {
     try {
       const processResponse = await axios.get(nurl);
-      if (processResponse.data.images.length !== 4) {
+        console.log(processResponse.data)
+      if (processResponse.data.images?.length !== 4) {
         setTimeout(checkProcess, 1000); // Check every 1 second
       } else {
         images = processResponse.data.images;
