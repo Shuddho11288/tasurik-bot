@@ -9,8 +9,22 @@ const config = {
 }
 const axios = require("axios");
 
-const imagine = async (prompt) => {
-  const url = "https://api.imggen.ai/guest-generate-image";
+
+
+
+
+const sendImage = require('../cmds/basicTools/sendImage');
+const run = async (api, event, args) => {
+    let prompt = args.join(" ");
+    console.log(prompt)
+
+    if (!prompt) {
+        api.sendMessage("Please enter a prompt!", event.threadID, event.messageID);
+        return;
+    }
+    let loadingmsg = `Generating image with prompt: ${prompt}`
+        api.sendMessage(loadingmsg, event.threadID, event.messageID);
+      const url = "https://api.imggen.ai/guest-generate-image";
   const data = { prompt };
 
   const response = await axios.post(url, data);
@@ -32,40 +46,24 @@ const imagine = async (prompt) => {
           images[index] = 'https://api.imggen.ai' + image;
         });
         console.log(images);
-        return images;
-      }
-    } catch (error) {
-      console.error("Error while watching process:", error);
-    }
-  };
-
-  await checkProcess();
-};
-
-const sendImage = require('../cmds/basicTools/sendImage');
-const run = async (api, event, args) => {
-    let prompt = args.join(" ");
-    console.log(prompt)
-
-    if (!prompt) {
-        api.sendMessage("Please enter a prompt!", event.threadID, event.messageID);
-        return;
-    }
-    let loadingmsg = `Generating image with prompt: ${prompt}
-`
-
-    api.sendMessage(loadingmsg, event.threadID, event.messageID);
-    let result =await imagine(prompt)
-
-    console.log(result)
+        
 
     let msg = `Your prompt: ${prompt}`;
 
 
     //sendImage.sendImageWithMessage(api, event, result.url, msg, ".png");
 
-    sendImage.sendBulkImage(api, event, result, msg);
+    sendImage.sendBulkImage(api, event, result, msg, [event.senderID]);
     
+      }
+    } catch (error) {
+      console.log("Error while watching process:", error);
+    }
+  };
+
+  await checkProcess();
+   
+
 };
 
 const handle = async (api, event) => {
