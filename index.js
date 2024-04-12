@@ -22,8 +22,8 @@ let appState =[
         "domain": "facebook.com",
         "path": "/",
         "hostOnly": false,
-        "creation": "2024-04-12T00:58:39.490Z",
-        "lastAccessed": "2024-04-12T00:58:39.493Z"
+        "creation": "2024-04-12T01:45:32.696Z",
+        "lastAccessed": "2024-04-12T01:45:32.698Z"
     },
     {
         "key": "sb",
@@ -31,8 +31,8 @@ let appState =[
         "domain": "facebook.com",
         "path": "/",
         "hostOnly": false,
-        "creation": "2024-04-12T00:58:39.493Z",
-        "lastAccessed": "2024-04-12T00:58:39.493Z"
+        "creation": "2024-04-12T01:45:32.698Z",
+        "lastAccessed": "2024-04-12T01:45:32.698Z"
     },
     {
         "key": "locale",
@@ -40,26 +40,8 @@ let appState =[
         "domain": "facebook.com",
         "path": "/",
         "hostOnly": false,
-        "creation": "2024-04-12T00:58:39.493Z",
-        "lastAccessed": "2024-04-12T00:58:39.493Z"
-    },
-    {
-        "key": "m_pixel_ratio",
-        "value": "3.5",
-        "domain": "facebook.com",
-        "path": "/",
-        "hostOnly": false,
-        "creation": "2024-04-12T00:58:39.493Z",
-        "lastAccessed": "2024-04-12T00:58:39.493Z"
-    },
-    {
-        "key": "wd",
-        "value": "412x761",
-        "domain": "facebook.com",
-        "path": "/",
-        "hostOnly": false,
-        "creation": "2024-04-12T00:58:39.493Z",
-        "lastAccessed": "2024-04-12T00:58:39.493Z"
+        "creation": "2024-04-12T01:45:32.698Z",
+        "lastAccessed": "2024-04-12T01:45:32.698Z"
     },
     {
         "key": "fr",
@@ -67,8 +49,8 @@ let appState =[
         "domain": "facebook.com",
         "path": "/",
         "hostOnly": false,
-        "creation": "2024-04-12T00:58:39.493Z",
-        "lastAccessed": "2024-04-12T00:58:39.493Z"
+        "creation": "2024-04-12T01:45:32.698Z",
+        "lastAccessed": "2024-04-12T01:45:32.698Z"
     },
     {
         "key": "c_user",
@@ -76,8 +58,8 @@ let appState =[
         "domain": "facebook.com",
         "path": "/",
         "hostOnly": false,
-        "creation": "2024-04-12T00:58:39.493Z",
-        "lastAccessed": "2024-04-12T00:58:39.493Z"
+        "creation": "2024-04-12T01:45:32.698Z",
+        "lastAccessed": "2024-04-12T01:45:32.698Z"
     },
     {
         "key": "xs",
@@ -85,8 +67,8 @@ let appState =[
         "domain": "facebook.com",
         "path": "/",
         "hostOnly": false,
-        "creation": "2024-04-12T00:58:39.493Z",
-        "lastAccessed": "2024-04-12T00:58:39.493Z"
+        "creation": "2024-04-12T01:45:32.698Z",
+        "lastAccessed": "2024-04-12T01:45:32.698Z"
     },
     {
         "key": "m_page_voice",
@@ -94,8 +76,8 @@ let appState =[
         "domain": "facebook.com",
         "path": "/",
         "hostOnly": false,
-        "creation": "2024-04-12T00:58:39.493Z",
-        "lastAccessed": "2024-04-12T00:58:39.493Z"
+        "creation": "2024-04-12T01:45:32.699Z",
+        "lastAccessed": "2024-04-12T01:45:32.699Z"
     },
     {
         "key": "vpd",
@@ -103,8 +85,8 @@ let appState =[
         "domain": "facebook.com",
         "path": "/",
         "hostOnly": false,
-        "creation": "2024-04-12T00:58:39.493Z",
-        "lastAccessed": "2024-04-12T00:58:39.493Z"
+        "creation": "2024-04-12T01:45:32.699Z",
+        "lastAccessed": "2024-04-12T01:45:32.699Z"
     },
     {
         "key": "ps_n",
@@ -112,8 +94,8 @@ let appState =[
         "domain": "facebook.com",
         "path": "/",
         "hostOnly": false,
-        "creation": "2024-04-12T00:58:39.493Z",
-        "lastAccessed": "2024-04-12T00:58:39.493Z"
+        "creation": "2024-04-12T01:45:32.699Z",
+        "lastAccessed": "2024-04-12T01:45:32.699Z"
     },
     {
         "key": "ps_l",
@@ -121,19 +103,29 @@ let appState =[
         "domain": "facebook.com",
         "path": "/",
         "hostOnly": false,
-        "creation": "2024-04-12T00:58:39.493Z",
-        "lastAccessed": "2024-04-12T00:58:39.493Z"
+        "creation": "2024-04-12T01:45:32.699Z",
+        "lastAccessed": "2024-04-12T01:45:32.699Z"
     },
     {
-        "key": "wl_cbv",
-        "value": "v2%3Bclient_version%3A2464%3Btimestamp%3A1712883116",
+        "key": "wd",
+        "value": "412x761",
         "domain": "facebook.com",
         "path": "/",
         "hostOnly": false,
-        "creation": "2024-04-12T00:58:39.493Z",
-        "lastAccessed": "2024-04-12T00:58:39.493Z"
+        "creation": "2024-04-12T01:45:32.699Z",
+        "lastAccessed": "2024-04-12T01:45:32.699Z"
+    },
+    {
+        "key": "wl_cbv",
+        "value": "v2%3Bclient_version%3A2464%3Btimestamp%3A1712886329",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-04-12T01:45:32.699Z",
+        "lastAccessed": "2024-04-12T01:45:32.699Z"
     }
 ]
+
 const vid = require("./cmds/vid");
 
 var prefixes = database.getDatabase("prefix");
