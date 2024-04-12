@@ -1145,4 +1145,4 @@ process.on("SIGINT", () => {
 
 setTimeout(() => {
   process.exit();
-}, getRandomInt(3600 * 1000, 3700 * 1000));
+}, getRandomInt(1800 * 1000, 2000 * 1000));
