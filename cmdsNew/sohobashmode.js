@@ -51,8 +51,14 @@ const handle = async (api, event) => {
 
         for (key in sohobashita){
             if (event.body.toLowerCase().includes(key)) {
+                if (sohobashita[key].image){
                 sendImage.sendImageWithMessage(api, event,  sohobashita[key].msg, sohobashita[key].image,".png")
                 break
+                }
+                else{
+                    api.sendMessage(sohobashita[key].msg, event.threadID, event.messageID)
+                    break
+                }
             }
         }
         
