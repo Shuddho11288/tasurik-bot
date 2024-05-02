@@ -36,6 +36,7 @@ const sohobashita = {
     'sohobash': {msg: 'ahahaha', image: 'https://i.postimg.cc/0N10Y8NP/image.png'},
     'somokami': {msg: 'ahhh', image: 'https://i.postimg.cc/0N10Y8NP/image.png'},
     'lesbian': {msg: 'tor ma', image: 'https://i.postimg.cc/0N10Y8NP/image.png'},
+    'ask' : {msg: 'tor ma jigaisilo'}
     
     
 }
