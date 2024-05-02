@@ -44,7 +44,7 @@ let appState =[
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1722410925.746608,
+        "expirationDate": 1722413581.813934,
         "hostOnly": false,
         "httpOnly": true,
         "name": "fr",
@@ -53,11 +53,11 @@ let appState =[
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "1JbHfm46C6mXapcJX.AWWEHfACZhB1FEuzw42_96W9HBA.BmM0Bz..AAA.0.0.BmM0Ct.AWUaVyi26qE"
+        "value": "1xCvVGWqIVOkZNHKY.AWVv5c74Yd79C86lEl_JiRAGDd8.BmM0q5..AAA.0.0.BmM0sN.AWX_oXhh-_w"
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1746170925.095654,
+        "expirationDate": 1746173497.893957,
         "hostOnly": false,
         "httpOnly": true,
         "name": "xs",
@@ -66,7 +66,7 @@ let appState =[
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "38%3AGwwx9zF9-l48tA%3A2%3A1714634923%3A-1%3A14454"
+        "value": "38%3AGwwx9zF9-l48tA%3A2%3A1714634923%3A-1%3A14454%3A%3AAcXVmGNSweZz5ukBOAqOGr9VQapvrdHBxJZQtSkM_Q"
     },
     {
         "domain": ".facebook.com",
@@ -83,7 +83,7 @@ let appState =[
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1746170925.095637,
+        "expirationDate": 1746173497.893873,
         "hostOnly": false,
         "httpOnly": false,
         "name": "c_user",
@@ -104,7 +104,7 @@ let appState =[
         "secure": true,
         "session": true,
         "storeId": null,
-        "value": "C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1714634930046%2C%22v%22%3A1%7D"
+        "value": "C%7B%22t3%22%3A%5B%7B%22o%22%3A0%2C%22i%22%3A%22g.6541503069231652%22%7D%5D%2C%22utc3%22%3A1714637591712%2C%22v%22%3A1%7D"
     },
     {
         "domain": ".facebook.com",
@@ -134,7 +134,7 @@ let appState =[
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1715239728,
+        "expirationDate": 1715242383,
         "hostOnly": false,
         "httpOnly": false,
         "name": "wd",
