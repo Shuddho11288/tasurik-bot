@@ -7,7 +7,7 @@ const config = {
     "version": "1.0.0",
     "permission": "groupadmin",
     "alias": "sohobashimode|sohobashita",
-    "isReplyCommand": true
+     isReplyCommand: true,
 }
 const sendImage = require('../cmds/basicTools/sendImage');
 const database = require('../cmds/database')
